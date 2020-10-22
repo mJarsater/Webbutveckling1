@@ -1,0 +1,137 @@
+html{
+    font-size: 100%;
+    background-color: #132357;
+}
+
+header{
+    background-color: whitesmoke;
+    z-index: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+header h1{
+    text-align: start;
+    margin: 0;
+}
+
+header h2{
+    text-align: start;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+nav{
+    padding: 1rem;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+
+aside{
+    background-color: whitesmoke;
+    float: right;
+    padding: 1rem;
+    margin: 1rem;
+    margin-right: 0;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+aside article{
+    text-align: start;
+}
+
+
+section{
+    margin: 1rem;
+    margin-left: 0;
+    background-color: whitesmoke;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    
+}
+
+section header{
+    margin-bottom: 1rem;
+}
+
+section h3{
+    text-align: center;
+}
+
+section footer{
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 1rem;
+
+}
+
+article{
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+article p{
+    padding: 1rem;
+    column-count: 2;
+
+}
+
+
+
+
+footer{
+    text-align: center;
+    background-color: whitesmoke;
+    clear: both;
+    padding: 1rem;
+    border-radius: 1rem;
+ 
+}
+
+footer a{
+    color: #132357 ;
+}
+
+form{
+    text-align: start;
+    display: inline-block;
+}
+form label{
+    margin: 1rem;
+}
+
+form input{
+    margin: 0.5rem;
+}
+ summary{
+     margin: 1rem;
+ }
+
+

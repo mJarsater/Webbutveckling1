@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="description" content="Hemsida för kursen Webbutveckling 1">
+    <meta name="author" content="Martin Jarsäter">
+    <meta name="generator">
+    <meta name="keywords">
+    <meta name="robots">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOW</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <h1>Come on you spurs!</h1>
+        <h2>En hemsida om Tottenham Hotspur</h2>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="now.html">Now</a></li>
+                <li><a href="future.html">Future</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--HEADER END-->
+
+    <!--ASIDE-->
+    <aside>
+        <figure>
+            <img src="images/Tottenham.jpg" alt="Tottenham Logo">
+            <figcaption> Tottenham Hotspur </figcaption>
+        </figure>
+        <h4>Våra toppspelare</h4>
+        <article>
+        <dl>
+            <dt>Harry Kane</dt>
+            <dd>Forward</dd>
+            <dt>Son Heung-min</dt>
+            <dd>Forward/Winger</dd>
+            <dt>Gareth Bale</dt>
+            <dd>Winger</dd>
+        </dl></article>
+    </aside>
+    <!--ASIDE END-->
+
+    <!--SECTION-->
+    <section>
+        <header>
+
+        </header>
+
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Spelare</th>
+                        <th>Mål</th>
+                        <th>Assist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Son Heung-min</td>
+                        <td>7</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Harry Kane</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>Totalt antal poäng</td>
+                    <td>21</td>
+                </tfoot>
+            </table>
+        </article>
+
+        <!--WHITESPACE-->
+        
+        <h3>Rösta på säsongens spelare!</h3>
+        <article>
+            
+            <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" autofocus name="name" id="name" pattern=".{5,}"
+                    title="Både för- och efternamn, minst 5 bokstäver."><br>
+                <label for="email">Email</label>
+                <input type="email" placeholder="exempel@hotmail.com" name="email" id="email" required><br>
+                <label for="website">Hemsida</label>
+                <input type="url" name="website" id="website"><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Man</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Kvinna</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Annat</label><br>
+                <input type="checkbox" name="Harry" id="Harry">
+                <label for="Harry">Harry Kane</label><br>
+                <input type="checkbox" name="Son" id="Son">
+                <label for="Son">Son Heung-min</label><br>
+                <input type="checkbox" name="Pierre" id="Pierre">
+                <label for="Harry">Pierre Emile Højbjerg</label><br>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+
+        <footer>
+
+        </footer>
+    </section>
+    <!--SECTION END-->
+
+    <!--FOOTER-->
+    <footer>
+        <a href="mailto:martin.jarsater@hotmail.com"> Kontakta mig! </a>
+
+    </footer>
+    <!--FOOTER END-->
+</body>
+
+</html>
