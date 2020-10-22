@@ -1,6 +1,7 @@
 html{
     font-size: 100%;
     background-color: #132357;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header{
@@ -21,6 +22,10 @@ header h2{
     margin-bottom: 1rem;
 }
 
+h4{
+    text-align: center;
+}
+
 
 
 nav{
@@ -32,6 +37,29 @@ nav{
     border-radius: 1rem;
 }
 
+nav a{
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-size: larger;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a:link{
+    color: #132357;
+}
+
+a:visited{
+    color: black;
+}
+
+a{
+    cursor: grab;
+}
+
 nav ul{
     text-align: center;
 }
@@ -40,7 +68,6 @@ nav li{
     display: inline;
     list-style: none;
     padding: 2rem;
-    text-decoration: none;
 }
 
 
@@ -57,6 +84,13 @@ aside{
 aside article{
     text-align: start;
 }
+
+
+
+aside li{
+    padding: 1rem;
+}
+
 
 
 section{
@@ -81,7 +115,7 @@ section footer{
     border-style: solid;
     border-width: 0.2rem;
     border-radius: 1rem;
-
+    text-align: start;
 }
 
 article{
@@ -90,19 +124,15 @@ article{
     border-width: 0.2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
-    
+    text-align: center;
 }
 
 article p{
     padding: 1rem;
     column-count: 2;
-
+    text-align: start;
 }
-
 
 
 
@@ -130,8 +160,41 @@ form label{
 form input{
     margin: 0.5rem;
 }
- summary{
+
+summary{
      margin: 1rem;
  }
 
+form textarea{
+    margin: 1rem;
+}
+
+th{
+    text-align: start;
+    padding: 1rem;
+}
+
+td{
+    text-align: start;
+    padding: 1rem;
+}
+
+figcaption{
+    text-align: center;
+}
+
+dt{
+    padding: 0.5rem;
+}
+
+p{
+    color: black;
+}
+
+
+table{
+    table-layout: auto;
+    width: 35rem;
+    empty-cells: hide;
+}
 
