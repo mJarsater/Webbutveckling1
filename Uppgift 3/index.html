@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Datum och tid</h2>
+    <p id="date"></p>
+    <button onclick="myFunction()">Klicka för att uppdatera</button><br>
+    <h2>Lämna en kommentar och skriv ut den.</h2>
+    <label for="comment">Comment</label>
+    <input type="text" name="comment" id="input">
+    <input type="submit" name="Submit" onclick="getText()"><br>
+    <button onclick="printArray()"> Visa kommentarer </button>
+    <p id="comment"> </p><br>
+    <h2>Räkna lite matte..</h2>
+    <input type="number" id="tal1">
+    <p> upphöjt till </p>
+    <input type="number" id="tal2">
+    <button onclick="calculateFunction()">
+        <p> Är lika med </p>
+    </button>
+    <label for="text" id="svar">SVAR</label>
+    <h2>Konvertera en sträng till en siffra</h2>
+    <input type="text" id="textToInteger">
+    <button onclick="convertToInteger()">Konvertera</button>
+    <p id="numberFromString"></p>
+    <h2>Räkna antalet gånger ett ord förekommer</h2>
+    <p id="faultySentence">KTH är det bästa universitet för Data- och Systemvetenskap.</p>
+    <button onclick="replace()">Rätta meningen</button>
+    <h2>Hitta en bokstäver</h2>
+    <p id="sentence">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatum, ipsam delectus eum non
+        quibusdam
+        quidem! Nemo dolorum provident alias perspiciatis ipsa ducimus, ipsum obcaecati.</p>
+    <label for="bokstav">Vilket bokstav vill du hitta?</label>
+    <input type="text" id="bokstav" maxlength="1">
+    <button onclick="regExFunction()">Skriv ut alla</button>
+    <p id="allLetters"></p>
+</body>
+
+
+<script src="object.js"></script>
+
+</html>
