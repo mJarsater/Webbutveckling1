@@ -8,21 +8,37 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body" onmouseover="showCoordinates(event)">
+
     <h1 id="titletext">Uppgift 3.1.3</h1>
     <h4 id="headertext">Den här hemsidan gäller uppgift 3.1.2</h4>
+    <h4 id=coordinates>Coordinates: </h4>
+    <button id="button"> Stop tracking me..</button>
     <ul id="list">
         <li><button onclick="refreshFunction()">Refresh</button></li>
         <li><button onclick="scrollDownFunction()">Take me down</button></li>
     </ul>
 
-    <ul class="bottom">
-        <li class="bottom">
-            <p class="bottom">Only way from here is up!</p>
+    <form id="form" onsubmit="submitFunction()">
+        <label for="name">Namn</label>
+        <input type="text" id="name">
+        <input type="submit" value="Submit" onclick="myFormFunction()">
+        <label for="age">Ålder</label>
+        <input type="number" id="age" onkeypress="keyFunction()">
+    </form>
+
+
+    <img onmouseout="rotateBackFunction(this)" onmouseover="rotateFunction(this)" class="coin" src="images/coin.png"
+        alt="Coin">
+
+    <ol>
+        <li class="bottomLi"><button onclick="scrollUpFunction()">Go up!</button></li>
+        <li class="bottomLi">
+            <p>You dont wanna be down here..</p>
         </li>
-        <li class="bottom"> <button class="bottom" onclick="scrollUpFunction()">Go up!</button></li>
-    </ul>
+    </ol>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="index.js"></script>
 
 </html>

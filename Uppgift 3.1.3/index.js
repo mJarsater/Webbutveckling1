@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+    $("#button").click(function () {
+        $("#body").unbind("mouseover mouseout");
+    });
 });
 
 function refreshFunction() {
@@ -11,10 +13,33 @@ function refreshFunction() {
 }
 
 function scrollDownFunction() {
-    window.scrollTo(0, 5000);
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 function scrollUpFunction() {
     window.scrollTo(0, 0);
 }
 
+function submitFunction() {
+    alert("Nice name!");
+    document.getElementById("form").reset();
+}
+
+function keyFunction() {
+    alert("En siffra i taget nu..")
+}
+
+function rotateFunction(image) {
+    image.style.transform = 'rotate(90deg)';
+}
+
+function rotateBackFunction(image) {
+    image.style.transform = 'rotate(0deg)';
+}
+
+function showCoordinates(event) {
+    var x = event.pageX;
+    var y = event.pageY;
+    var coordinates = "Coordinates: X : " + x + " Y : " + y;
+    document.getElementById("coordinates").innerHTML = coordinates;
+}
