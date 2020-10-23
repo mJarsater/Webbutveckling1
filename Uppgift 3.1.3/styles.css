@@ -1,0 +1,25 @@
+body{
+    height: 5000px;
+}
+
+.headertext{
+    color: red;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.list{
+    list-style: none;
+    text-align: center;
+}
+
+
+.bottom{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: -4000px;
+    text-align: center;
+    margin: 1rem;
+}
