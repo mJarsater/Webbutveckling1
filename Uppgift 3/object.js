@@ -48,3 +48,12 @@ function regExFunction() {
     var result = sentence.match(pattern);
     document.getElementById("allLetters").textContent = result;
 }
+
+function canMakeHTTPRequest() {
+    return typeof globalThis.XMLHttpRequest === 'function';
+
+}
+
+var result = canMakeHTTPRequest();
+
+document.getElementById("httprequest").textContent = result;
