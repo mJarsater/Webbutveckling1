@@ -1,6 +1,10 @@
-$(document).ready(function () {
-    $("#button").click(function () {
-        $("#body").unbind("mouseover mouseout");
+
+$(document).ready(function(){
+    $("#texten").on("click", function(){
+        $(this).css("font-size", "1.5rem");
+    });
+    $("#buttonText").click(function(){
+        $("#texten").off("click");
     });
 });
 
@@ -43,3 +47,7 @@ function showCoordinates(event) {
     var coordinates = "Coordinates: X : " + x + " Y : " + y;
     document.getElementById("coordinates").innerHTML = coordinates;
 }
+
+document.getElementById("falseLink").addEventListener("click", function(event){
+    event.preventDefault()
+  });
