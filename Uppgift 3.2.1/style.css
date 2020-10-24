@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#next {
+  cursor: pointer;
+}
+#prev {
+  cursor: pointer;
+}
+
+figure {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
