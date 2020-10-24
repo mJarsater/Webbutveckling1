@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#p1").fadeIn(1000);
+                $("#p2").fadeIn(2000);
+                $("#p3").fadeIn(3000);
+            });
+        });
+    </script>
+    <script src="page2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uppgift 3.2.2</h1>
+        <h3>Fade and animate</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Toggle and Show/Hide</a></li>
+                <li><a href="page2.html">Fade and animate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <button>Fade in..</button>
+        <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+            similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
+        <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+            similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
+        <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+            similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
+    </section>
+</body>
+
+</html>
