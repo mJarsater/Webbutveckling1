@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling 1</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Uppgift 3.2.2</h1>
+        <h3>Toggle and Show/Hide</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Toggle and Show/Hide</a></li>
+                <li><a href="fade.html">Fade</a></li>
+                <li><a href="animate.html">Animate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="boxSection">
+        <section id="buttonSection">
+            <button id="animateBtn" onclick="animateSwing()">Swing</button>
+            <button id="animateBtn" onclick="animateLinear()">Linear</button>
+            <button id="animateBtn" onclick="resetAnimation()">Reset</button>
+        </section>
+        <div id="box1"></div>
+    </section>
+</body>
+</html>

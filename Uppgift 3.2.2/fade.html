@@ -9,7 +9,20 @@
                 $("#p1").fadeIn(1000);
                 $("#p2").fadeIn(2000);
                 $("#p3").fadeIn(3000);
+                $("#fadeOutBtn").fadeIn(4000);
             });
+            $("#fadeOutBtn").click(function(){
+                $("#p1").fadeOut(1000);
+                $("#p2").fadeOut(2000);
+                $("#p3").fadeOut(3000);
+                $("#fadeOutBtn").fadeOut(4000);
+            })
+            $("#fadeInOutBtn").click(function(){
+                $("#p1").fadeToggle(1000);
+                $("#p2").fadeToggle(2000);
+                $("#p3").fadeToggle(3000);
+                $("#fadeOutBtn").fadeToggle(4000);
+            })
         });
     </script>
     <script src="page2.js"></script>
@@ -26,11 +39,13 @@
         <nav>
             <ul>
                 <li><a href="index.html">Toggle and Show/Hide</a></li>
-                <li><a href="page2.html">Fade and animate</a></li>
+                <li><a href="fade.html">Fade</a></li>
+                <li><a href="animate.html">Animate</a></li>
             </ul>
         </nav>
     </header>
     <section>
+        <button id="fadeInOutBtn">Fade in/out</button>
         <button>Fade in..</button>
         <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
@@ -38,6 +53,7 @@
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
         <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
+            <button id="fadeOutBtn">Fade out..</button>
     </section>
 </body>
 

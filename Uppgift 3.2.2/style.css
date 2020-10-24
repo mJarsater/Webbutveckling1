@@ -16,7 +16,7 @@ nav {
   margin: 1rem;
 }
 
-nav li {
+li {
   margin: 1rem;
   display: inline;
 }
@@ -60,4 +60,30 @@ a {
 #p3 {
   display: none;
   background-color: darkblue;
+}
+#fadeOutBtn {
+  display: none;
+}
+
+button {
+  margin: 1rem;
+}
+
+#box1,
+#box2,
+#box3 {
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: blue;
+}
+
+#buttonSection {
+  display: inline;
+}
+
+#boxSection {
+  width: 50%;
+  margin: auto;
 }
