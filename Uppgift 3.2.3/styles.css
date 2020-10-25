@@ -1,0 +1,18 @@
+canvas {
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+#image {
+  display: none;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  margin: 1rem;
+  list-style: none;
+}

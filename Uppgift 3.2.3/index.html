@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><button onclick="drawLine()">Draw Line</button></li>
+        <label for="values">X and Y:</label>
+        <input type="number" name="x" id="x-field">
+        <input type="number" name="y" id="y-field"><br>
+        <label for="values">Starting pos: </label>
+        <input type="number" name="x" id="x-start">
+        <input type="number" name="y" id="y-start">
+        <canvas id="canvas-line"></canvas>
+        <li><button onclick="drawSmiley()">Draw smiley</button></li>
+        <canvas id="canvas-smiley"></canvas>
+        <li><button onclick="drawText()">Draw Text</button></li>
+        <canvas id="canvas-text"></canvas>
+        <li><button onclick="addGradient()">Add gradient</button></li>
+        <canvas id="canvas-gradient"></canvas>
+        <li><button onclick="addImage()">Add Image</button></li>
+        <canvas id="canvas-image"> </canvas>
+        <img id="image" src="images/image.jpg" alt="image">
+        <li><button id="saveBtn" onclick="saveImage()">Save image</button></li>
+    </ul>
+
+</body>
+</html>
