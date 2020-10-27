@@ -57,10 +57,19 @@ function validateErp() {
 }
 
 function validate() {
-    // titta vilken knapp som klickades
-    var x = document.querySelector('input[name=radio]:checked').value;
-    console.log(x);
-    //validera därefter
+    var radioValue = $("input[name='radio']:checked").val();
+    switch (radioValue) {
+        case "erp":
+            validateErp();
+            break;
+        case "markIt":
+            validateMarkIt();
+            break;
+        case "datasyst":
+            validateDataSyst();
+            break;
+    }
 }
+
 
 

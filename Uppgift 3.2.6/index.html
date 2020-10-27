@@ -17,8 +17,7 @@
     </header>
 
     <section>
-        <form id="dynamicForm" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="POST"
-            onsubmit="return validate();">
+        <form id="dynamicForm" onsubmit="return validate();">
             <input placeholder="Name" type="text" name="name" id="name" required><br>
             <input placeholder="Email" type="email" name="email" id="email" required><br>
             <p>Program:</p>
@@ -42,22 +41,18 @@
                 <label for="idsv">ITO</label>
                 <p>Vad tyckte du om kurserna?</p>
                 <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
-                <input onclick="validateDataSyst()" id="submitBtnDataSyst" type="submit" value="Skicka">
             </section>
             <section id="erpSection">
                 <input placeholder="Favorit kurs" type="text" name="favorite" id="favoriteErp">
-                <input onclick="validateErp()" id="submitBtnErp" type="submit" value="Skicka">
             </section>
             <section id="markItSection">
                 <p>Vad tycker du om utbildningen hittills?</p>
                 <label for="points">Dålig (1)</label>
                 <input type="range" id="points" name="points" min="0" max="10">
                 <label for="points">Bra (10)</label><br>
-
                 <input placeholder="Kommentar" type="text" name="commentMarkIt" id="commentMarkIt">
-
-                <input id="submitBtnMarkIt" type="submit" value="Skicka">
             </section>
+            <input id="submit" type="submit" value="Skicka!">
         </form>
     </section>
 </body>

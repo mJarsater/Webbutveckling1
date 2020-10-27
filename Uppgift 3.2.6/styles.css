@@ -32,7 +32,7 @@ section #dataSystSection,#erpSection,#markItSection{
     border-radius: 16px;
 }
 
-#submitBtnDataSyst, #submitBtnErp, #submitBtnMarkIt{
+#submit{
     border-radius: 16px;
     background-color: transparent;
     padding: 0.5rem;
@@ -40,7 +40,7 @@ section #dataSystSection,#erpSection,#markItSection{
     margin-top: 1rem;
 }
 
-#submitBtnDataSyst:hover, #submitBtnErp:hover, #submitBtnMarkIt:hover{
+#submit:hover{
     cursor: pointer;
     background-color: black;
     color: azure;
