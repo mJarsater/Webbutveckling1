@@ -1,0 +1,16 @@
+.tabContent{
+    display: none;
+}
+
+.tabs{
+    overflow: hidden;
+}
+
+.tabs button.active {
+    background-color: #ccc;
+}
+
+article, header, #tabSection{
+    width: 50%;
+    margin: auto;
+}
