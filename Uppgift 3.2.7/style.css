@@ -4,3 +4,28 @@
     background-color: yellow;
     border: 2px solid black;
 }
+
+header{
+    width: 50%;
+    margin: auto;
+}
+
+header p, h1{
+    display: block;
+    text-align: center;
+
+}
+
+section{
+    width: 50%;
+    margin: auto;
+}
+
+.firstClass { 
+    padding: 1rem;
+    background-color: blanchedalmond;
+}
+.otherClass { 
+    padding: 2rem;
+    background: burlywood;
+}
