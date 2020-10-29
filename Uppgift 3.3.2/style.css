@@ -6,4 +6,37 @@ header{
 section{
     width: 50%;
     margin: auto;
+    text-align: center;
+    margin-top: 3rem;
 }
+
+section p{
+    text-align: start;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+a{
+    background-color: teal;
+    text-decoration: none;
+    color: white;
+    margin: 1rem; 
+    padding: 0.5rem;
+}
+
+li a:hover{
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+}
+
+
+img{
+    
+}
+
