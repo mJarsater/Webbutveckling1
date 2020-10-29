@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+}
+
+section{
+    width: 50%;
+    margin: auto;
+}
+ button{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
