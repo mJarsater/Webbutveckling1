@@ -1,0 +1,9 @@
+header{
+    text-align: center;
+}
+
+input, button{
+    display: block;
+    align-items: center;
+    margin: 1rem auto;
+}
