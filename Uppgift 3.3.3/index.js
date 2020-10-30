@@ -8,6 +8,7 @@ window.onload = function () {
     var readBtn = document.getElementById("readBtn");
     var addBtn = document.getElementById("addBtn");
     var removeBtn = document.getElementById("removeBtn");
+    var name = document.getElementById("name");
     var content = document.getElementById("dbContent");
     var dbName;
     var request;
@@ -22,8 +23,11 @@ window.onload = function () {
 
         request.onsuccess = function (event) {
             db = request.result;
-            var name = document.getElementById("name");
-            name.innerHTML = `Name: ${db.name}`;
+            var items = db.transaction(dbName + "Store", "readonly").objectStore(dbName + "Store").getAll();
+            items.onsuccess = function () {
+                var result = items.result.length;
+                name.innerHTML = `Name: ${db.name} <br > Items: ${result}`;
+            }
         }
 
 
@@ -41,6 +45,11 @@ window.onload = function () {
             var name = document.getElementById("name");
             name.innerHTML = `New database <br >Name: ${db.name}`;
         }
+        request.onsuccess = function (event) {
+            db = request.result;
+            var name = document.getElementById("name");
+            name.innerHTML = `Name: ${db.name}`;
+        }
     }
 
     addBtn.onclick = function () {
@@ -52,9 +61,11 @@ window.onload = function () {
 
 
     readBtn.onclick = function () {
-        var items = db.transaction(dbName + "Store").objectStore(dbName + "Store").getAll();
+        var items = db.transaction(dbName + "Store", "readonly").objectStore(dbName + "Store").getAll();
         items.onsuccess = function () {
             var result = items.result;
+            name.innerHTML = `Name: ${db.name} <br > Items: ${result.length}`;
+            content.innerHTML = "";
             for (var i = 0; i < result.length; i++) {
                 content.innerHTML += `<li>${result[i]}</li> <br >`;
             }
@@ -65,8 +76,13 @@ window.onload = function () {
         tx = db.transaction(dbName + "Store", "readwrite");
         var store = tx.objectStore(dbName + "Store");
         store.clear();
-        console.log("removed")
-        content.innerHTML = `Database cleared`;
+        var length = store.getAll();
+        length.onsuccess = function () {
+            var result = length.result.length;
+            name.innerHTML = `Name: ${db.name} <br > Items: ${result}`;
+            content.innerHTML = `Database cleared`;
+
+        }
     }
 
 }
