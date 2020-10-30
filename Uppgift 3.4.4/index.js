@@ -7,9 +7,6 @@ function logResults(json) {
     document.getElementById("avatar").src = json.data.avatar_url;
     document.getElementById("created_at").append(" " + json.data.created_at);
     document.getElementById("updated_at").append(" " + json.data.updated_at);
-
-
-    console.log(json.data.avatar_url);
 }
 
 $.ajax({
