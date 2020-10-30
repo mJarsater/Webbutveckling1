@@ -17,12 +17,23 @@
 
     <section>
         <input type="text" id="dbName">
-        <button id="openBtn">Create / Open database</button>
+        <button id="openBtn">Open database</button>
+        <button id="createBtn">Create database</button>
 
         <input type="text" id="element">
-        <button onclick="addElement()">Add element</button>
+        <button id="addBtn">Add element</button> <br>
+
+        <button id="readBtn">Read DB</button> <br>
+
+
+        <button id="removeBtn">Remove element</button>
     </section>
-    <div id="database"></div>
+    <section>
+        <h2>Database</h2><br>
+        <h4 id="name">
+            </h3>
+            <div id="dbContent"></div>
+    </section>
 </body>
 
 </html>
