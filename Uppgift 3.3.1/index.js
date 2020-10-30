@@ -27,3 +27,14 @@ window.onload = function () {
     }
 
 };
+function clearLocalStorage() {
+    const localStorageOutput = document.getElementById("localStorageOutput");
+    localStorage.clear();
+
+    const key = localStorage.key(1);
+    const value = localStorage.getItem(key);
+
+    localStorageOutput.innerHTML = `Local Storage Cleared <br >Key: ${key}  Value: ${value}<br >`;
+
+
+}
