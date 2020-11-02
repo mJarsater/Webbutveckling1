@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+}
+
+section{
+    text-align: center;
+}
+
+button{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: teal;
+    color: white;
+    border: 2px solid teal;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: teal;
+}
+
+#map {
+    height: 100%;
+    height: 400px;
+    background-color: grey;
+  }
