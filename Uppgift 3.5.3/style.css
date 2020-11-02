@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+     display: inline-block;
+     box-sizing: border-box;
+     width: 150px;
+}
+
+
+a{
+    text-decoration: none;
+    background-color: teal;
+    color: white;
+     padding: 1rem;
+     border-radius: 5px;
+     border: 2px solid teal;
+}
+
+a:hover{
+    background-color: white;
+    color: teal;
+}
+
+section{
+    margin: 5rem;
+}
+
+img{
+    width: 100%;
+}
