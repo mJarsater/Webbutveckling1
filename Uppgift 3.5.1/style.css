@@ -1,0 +1,54 @@
+header{
+    text-align: center;
+}
+
+
+section{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+    border: black 2px solid;
+    transition: all 0.2s ease-in;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+
+
+}
+
+p{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+#box-teal{
+    background-color: teal;
+}
+#box-red{
+    background-color: red;
+}
+#box-yellow{
+    background-color: yellow;
+}
+#box-green{
+    background-color: green;
+}
+
+#box-teal:hover, #box-red:hover, #box-yellow:hover, #box-green:hover{
+    background-color: white;
+}
+
+.box.selected{
+    transform: scale(1.2);
+}
