@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Uppgift 4.4</title>
+  <link>https://people.dsv.su.se/~maja7816/Uppgift%204.4</link>
+  <description>RSS feed för ljudfil</description>
+  <atom:link href="https://people.dsv.su.se/~maja7816/Uppgift%204.4/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+    <title>Glory, glory Tottenham Hotspur</title>
+    <link>https://people.dsv.su.se/~maja7816/Uppgift%204.4/feed.xml</link>
+    <description>Ett nytt klipp av läktarsången från white hart lane</description>
+    <guid isPermaLink="true"> https://people.dsv.su.se/~maja7816/Uppgift%204.4/audio/Glory_Tottenham_Hotspur.mp3</guid>
+  </item>
+  <item>
+    <title>Nya trailern!</title>
+    <link>https://people.dsv.su.se/~maja7816/Uppgift%204.4/feed.xml</link>
+    <description>En ny trailer för dokumentärserien om the glory Lilywhites</description>
+    <guid isPermaLink="true"> https://people.dsv.su.se/~maja7816/Uppgift%204.4/video/Tottenham_Trailer.mp4</guid>
+  </item>
+</channel>
+</rss>
+
+

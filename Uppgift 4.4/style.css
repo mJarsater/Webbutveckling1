@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+}
+section{
+    width: 50%;
+    margin: auto;
+}
+audio{
+    margin: 3rem 0;
+}
+video{
+    margin: 3rem 0;
+    width: 100%;
+    align-self: start;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+li a{
+    display: inline;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: teal;
+    border: 2px solid teal;
+    color: white;
+}
+
+li a:hover{
+    background-color: white;
+    color: teal;
+}
+
+    
+    

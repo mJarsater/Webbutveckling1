@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
   <title>Webbutveckling 1</title>
   <link>https://people.dsv.su.se/~maja7816/Uppgift%204.2/</link>
   <description>Byggd för kursen webbutveckling 1</description>
-  <item>
-    <title>Uppgift 4.2</title>
-    <link>https://people.dsv.su.se/~maja7816/Uppgift%204.2/rss.xml</link>
-    <description>RSS-sammanfatting för uppgift 4.2 på kursen Webbutveckling 1 vid Stockholm Universitet</description>
-  </item>
-</channel>
+  <atom:link href="https://people.dsv.su.se/~maja7816/Uppgift%204.2/rss.xml" rel="self" type="application/rss+xml" />
+</channel >
 
 </rss>
