@@ -6,10 +6,12 @@
     font-family: "Roboto Slab";
 }
 
+header{
+    margin: 2rem 0;
+}
 
 header h1{
-    margin: 2rem 2rem;
-    padding: 2rem;
+    padding: 2rem 0rem;
     font-family: "Roboto Slab";
     text-align: start;
 }
@@ -37,13 +39,11 @@ span{
 }
 
 nav{
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
     background: url(/Gesällprov/images/header_img.jpg);
     background-size: 100%;
     background-position: center;
     z-index: -1;
-    border-radius: 6px;
     border: 4px solid black;
 }
 
