@@ -6,6 +6,7 @@
     font-family: "Roboto Slab";
 }
 
+
 header{
     margin: 2rem 0;
 }
@@ -15,9 +16,6 @@ header h1{
     font-family: "Roboto Slab";
     text-align: start;
 }
-
-
-
 
 img{
     position: absolute;
@@ -54,11 +52,10 @@ nav h1{
 }
 
 ul{
-    display: inline;
     list-style: none;
 }
 
-li{
+nav li{
     display: inline;
     text-align: start;
     padding: 0.5rem;
@@ -90,19 +87,39 @@ a:hover > i{
 }
 
 section{
-    margin: 2rem 2rem;
+    float: left;
+    width: 82%;
+
 }
 
-section h2{
-    padding: 1rem;
+.container{
+    margin: 0  2rem;
 }
 
 aside{
-    margin: 0 2rem;
+    text-align: center;
+    float: right;
+    width: 15%;
+    margin-top:1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+aside ul{
+    border: 2px solid black;
+    border-radius: 6px;
+
+}
+
+
+aside li{
+    display: block;
+    text-align: center;
+
 }
 
 article{
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
 
 }
 
@@ -135,6 +152,13 @@ article a:hover{
 
 .bg-protocol{
     position: relative;
+}
+
+.card-text{  
+    white-space: nowrap;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bg-protocol::before{
@@ -177,16 +201,14 @@ article a:hover{
     border: 2px black solid;
     color: black;
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     border-radius: 6px;
-
-    width: 90%;
-    margin: 0 auto;
 }
 
 
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card-header{
@@ -204,14 +226,21 @@ article a:hover{
     padding: 0.5rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
+    width: 15rem;
+    border: black solid 2px;
+    border-radius: 6px;
+    font-family: "Roboto Slab";
+    transition: all 0.2s ease-in-out;
+    display: block;
+    text-align: center;
 }
 
 .article-card{
-    margin: 0 auto;
+    margin: 0;
     max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .two-column{
@@ -219,40 +248,94 @@ article a:hover{
     columns: 2;
 }
 
-p{
-    margin: 0rem 0rem;
-}
-
-footer{
-    margin: 0rem 2rem;
-    overflow: hidden;
-    height: 10rem;            
-    text-align: center;
-    background-color: black;
-    opacity: 0.7;
-    color: white;
-}
-
-button{
-    padding: 1rem;
-    border: black solid 2px;
-    border-radius: 6px;
-    background-color: transparent;
-    font-family: "Roboto Slab";
-    transition: all 0.2s ease-in-out;
-    display: block;
-    margin: auto;   
-    text-align: center;
-    width: 150px;
-}
-
-button:hover{
+.card-button:hover{
     background-color: black;
     color: white;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-#main-content{
+footer {
+    margin-top: 5rem;
+    bottom: 0;
+    height: 10rem;
     display: flex;
+    width: 100%;
+    background-size: 100%;
+
+    justify-content: space-evenly;
+  }
+
+
+  footer ul{
+      text-align: center;
+      display: table-cell;
+      padding: 2rem;
+      width: 25%;
+  }
+
+  footer a{
+    overflow: hidden;
+    color:black;
+  }
+  footer a:hover{
+      padding: 0;
+  }
+
+
+
+
+@media screen and (max-width: 1500px){
+    aside{
+        position: static;
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    aside ul{
+        padding: 0.5rem;
+        column-count: 3;
+    }
+
+    section{
+        position: static;
+        float: none;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    nav li {
+        display: block;
+    }
+
+    aside ul{
+        padding: 0.5rem;
+        column-count: 2;
+    }
+
+    footer{
+        display: block;
+    }
+    footer ul{
+        display: inline;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 615px){
+
+    img{
+        display: none;
+    }
+
+    aside ul{
+        padding: 0.5rem;
+        column-count: 1;
+    }
 }
