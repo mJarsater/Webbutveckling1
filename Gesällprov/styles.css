@@ -7,8 +7,9 @@
 }
 
 
+
 header{
-    margin: 2rem 0;
+    height: 30%;
 }
 
 header h1{
@@ -24,7 +25,6 @@ img{
     width: 9rem;
     transition: all 0.4s ease-in-out;
     filter: invert(100%);
-
 }
 
 img:hover{
@@ -43,6 +43,7 @@ nav{
     background-position: center;
     z-index: -1;
     border: 4px solid black;
+    padding-bottom: 3rem;
 }
 
 nav h1{
@@ -81,7 +82,76 @@ a:hover > i{
     color: yellow;
 }
 
+.article-one{
+    width: 100%;
+    height: 45rem;
+    margin: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
 
+.article-one h2,p{
+    text-align: start;
+    padding: 1rem;
+    margin: 3rem 2rem;
+}
+
+.article-one p{
+    font-size: 1.5rem;
+}
+
+button{
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    border: 2px black solid;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 200px;
+    margin-top: 5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+button:hover span {
+    padding-right: 25px;
+  }
+
+button i{
+    position: relative;
+    right: 20%;
+    display: none;
+}
+
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+button span:after {
+    content: '\00bb';
+    color: black;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    margin:0;
+  }
+  
 .selected > i{
     color: yellow;
 }
@@ -89,7 +159,11 @@ a:hover > i{
 section{
     float: left;
     width: 82%;
+    margin-top: 2rem;
+}
 
+section h2{
+    margin-bottom: 1rem;
 }
 
 .container{
