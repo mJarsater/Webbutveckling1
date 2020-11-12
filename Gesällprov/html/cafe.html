@@ -4,7 +4,7 @@
 <head>
     <script src="/Webbutveckling1/Gesällprov/script.js"></script>
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/Gesällprov/styles.css">
+    <link rel="stylesheet" href="/Gesällprov/css/cafe.css">
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
     <meta name="generator">
@@ -16,31 +16,77 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>DISK Studentkår</h1>
-            <ul>
-                <li><a href="home.html"><i class="fas fa-home"></i> HEM</a></li>
-                <li><a href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
-                <li><a class="selected" href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
-                <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
-            </ul>
-            <a href="home.html"><img src="/Gesällprov/images/DISKlogga_header.png" alt="DISK Loga"></a>
-
-        </nav>
+    <header style="height: 20rem;">
+        <h1><a href="home.html">DISK</a></h1>
+        <h2>Studentkår</h2>
+        <h3> För dig som studerar vid DSV i Kista</h3>
     </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HEM</a></li>
+            <li><a class="selected" href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
+            <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
+            <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
+        </ul>
+    </nav>
     <section>
         <article>
             <h2>Snack Overflow</h2>
             <h3>One-stop-shop för all energi du behöver!</h3>
+            <figure>
+                <img src="/Gesällprov/images/cafeet.jpg" alt="Kafeet">
+
+            </figure>
+
             <p>Kaféet erbjuder en stor variation av tilltugg och förfriskningar. Alla sallader och mackor är gjorda
                 varje morgon i vårt eget kök. Du kan även köpa ett av våra kaffekort i
                 kaféet och på det kortet få den tionde varma drycken gratis. Medlemmar får 20% rabatt och aktiva
                 medlemmar får 25% rabatt vid all försäljning i Kaféterian.</p>
+
+            <p>Vi vill alltid förbättra oss. Är det någonting du saknar, eller kanske något som kan förbättras i
+                kaféet? Skriv till oss och berätta!</p>
+            <form action="">
+                <textarea name="feedback" id="feedback" cols="50" rows="10"></textarea>
+                <input type="submit" value="SKICKA">
+            </form>
         </article>
     </section>
+
+    <section>
+        <article>
+            <h2>Meny</h2>
+        </article>
+
+    </section>
+
+
     <footer>
-        <h2>Footertextw</h2>
+        <ul class="footer-start">
+            <h3>Kontakt</h3>
+            <li><a href="mailto:kx@disk.su.se">Email: kx@disk.su.se</a></li>
+            <li>Telefon: 076-948 95 60</li>
+        </ul>
+        <ul>
+            <h3>Adress</h3>
+            <li>Studentkåren DISK</li>
+            <li>Borgarfjordsgatan</li>
+            <li>164 40 Kista</li>
+        </ul>
+        <ul class="footer-center">
+            <h3>Sidor</h3>
+            <li><a href="home.html">Hem</a></li>
+            <li><a href="about.html"></i> Om oss</a></li>
+            <li><a href="cafe.html"></i>Snack overflow</a></li>
+            <li><a href="student.html"></i> Studentstöd</a></li>
+        </ul>
+        <ul class="footer-end">
+            <h3>Webmaster</h3>
+            <li><a href="mailto:webmaster@disk.su.se">Kontakt</a></li>
+            <li>GitHub</li>
+        </ul>
+
+
+
     </footer>
 </body>
 

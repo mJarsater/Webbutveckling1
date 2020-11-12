@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/Gesällprov/styles.css">
+    <link rel="stylesheet" href="/Gesällprov/css/about.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
@@ -15,72 +15,148 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>DISK Studentkår</h1>
-            <ul>
-                <li><a href="home.html"><i class="fas fa-home"></i> HEM</a></li>
-                <li><a class="selected" href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
-                <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
-                <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
-            </ul>
-            <a href="home.html"><img src="/Gesällprov/images/DISKlogga_header.png" alt="DISK Loga"></a>
-
-        </nav>
+    <header style="height: 20rem;">
+        <h1><a href="home.html">DISK</a></h1>
+        <h2>Studentkår</h2>
+        <h3> För dig som studerar vid DSV i Kista</h3>
     </header>
-    <section>
-        <article>
-            <h2>Vilka är vi?</h2>
-            <p>DISK är studentkåren för dig som studerar vid DSV i Kista. Vi finns till för att förgylla alla studenters
-                tid på DSV genom både studienyttiga aktiviteter (studentstöd) & studiesociala aktiviteter (studentliv).
-                Vi erbjuder därför saker som studiebevakning, handledning (DISK Workshop), studentrabatter, roliga event
-                anordnade av våra sektioner & har även ett studerandeskyddsombud.</p>
-        </article>
+    <nav id="nav">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> HEM</a></li>
+            <li><a class="selected" href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
+            <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
+            <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
+        </ul>
+    </nav>
 
 
+    <article id="article-one">
+        <figure>
+            <img src="/Gesällprov/images/programming_screen.jpg" alt="Computor pic">
+        </figure>
+        <h2>Vilka är vi?</h2>
+        <p>DISK är studentkåren för dig som studerar vid DSV i Kista. Vi finns till för att förgylla alla studenters
+            tid på DSV genom både studienyttiga aktiviteter (studentstöd) & studiesociala aktiviteter (studentliv).
+            Vi erbjuder därför saker som studiebevakning, handledning (DISK Workshop), studentrabatter, roliga event
+            anordnade av våra sektioner & har även ett studerandeskyddsombud.</p>
+        <p>I DSVs lokaler har vi ett café (Snack Overflow) där man kan köpa sallader, mackor, drycker, mindre snacks. Vi
+            har också en kårexpedition där man kan köpa till exempel kompendium, pennor, och våra fina
+            ”DISK”-nyckelband. I anslutning till DSV har vi även vår studenpub, Foo Bar, där majoriteten av våra event
+            äger rum.</p>
+
+    </article>
+
+
+    <article id="article-button">
         <button>BLI MEDLEM</button>
+    </article>
 
 
+    <article id="article-two">
+        <figure>
+            <img src="/Gesällprov/images/studentlivet.jpg" alt="Studentlivet">
+        </figure>
         <h2>Studentlivet</h2>
-        <article>
-            <p>Studietiden ska vara rolig. Det försöker vi se till främst genom våra sektioner. DISK har sex stycken
-                olika sektioner som arbetar aktivt med att hålla event för DSVs studenter. För vissa event krävs det att
-                man är medlem i DISK, och ibland till och med aktiv medlem.
-                Den första sektionen ni kommer i kontakt med är <span>Insparken</span>. De ansvarar för att DSVs nya
-                studenter får
-                ett ordentligt välkomnande och introduceras till student- & kårlivet, men även till sina framtida vänner
-                såklart. Via kårens studiesociala arrangemang är det lätt att träffa vänner inom, men också utom sin
-                egen klass. Vi lovar att det kommer hjälpa dig få ut det där extra ur din studietid!
-            </p>
-            <aside>
-                <p>Förutom Insparken finns <span>Näringslivssektionen (NärS)</span>. De är bryggan mellan arbetslivet
+        <p>Studietiden ska vara rolig. Det försöker vi se till främst genom våra sektioner. DISK har sex stycken
+            olika sektioner som arbetar aktivt med att hålla event för DSVs studenter. För vissa event krävs det att
+            man är medlem i DISK, och ibland till och med aktiv medlem.
+            Den första sektionen ni kommer i kontakt med är <span>Insparken</span>. De ansvarar för att DSVs nya
+            studenter får
+            ett ordentligt välkomnande och introduceras till student- & kårlivet, men även till sina framtida vänner
+            såklart. Via kårens studiesociala arrangemang är det lätt att träffa vänner inom, men också utom sin
+            egen klass. Vi lovar att det kommer hjälpa dig få ut det där extra ur din studietid!
+        </p>
+
+    </article>
+
+    <article id="article-three">
+        <ul>
+            <li>
+                <p><span>Näringslivssektionen (NärS)</span>. De är bryggan mellan arbetslivet
                     och
                     studenterna
                     och gör det möjligt för dig som student att gå på olika seminarium och liknande.</p>
-
+            </li>
+            <li>
                 <p> <span>Klubbmästeriet (KM)</span> är sektionen som arrangerar våra onsdags- & fredagspubar. De har
                     också
                     flertalet
                     interna event varje termin för sina aktiva medlemmar, som till exempel sittningar.</p>
-
+            </li>
+            <li>
                 <p><span>Musikaliska & estetiska sektionen (MES)</span> sysslar med allt som kan anses som kreativt. De
                     håller i bland
                     annat filmkvällar & utför spex (uppträdanden) på finsittningar.</p>
-
+            </li>
+            <li>
                 <p><span>Sportsektionen</span> anordnar fysiska aktiviteter såsom klättring, fotboll och basket. De
                     anordnar
                     även en
                     årlig Skiweek!</p>
-
+            </li>
+            <li>
                 <p><span>Särimners Kultingar (SK)</span> anordnar spelkvällar, både brädspel och TV-spel, LAN och Game
                     JAMS.
                 </p>
-            </aside>
-        </article>
-    </section>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <figure>
+                    <img src="/Gesällprov/images/logos/nars.png" alt="Närs Logo">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="/Gesällprov/images/logos/km.png" alt="KM Logo">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="/Gesällprov/images/logos/mes.png" alt="MES Logo">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="/Gesällprov/images/logos/sporten.png" alt="Sporten Logo">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="/Gesällprov/images/logos/sk.png" alt="SK Logo">
+                </figure>
+            </li>
+        </ul>
+    </article>
+
     <footer>
-        <h2>Footertext</h2>
-        <p>Kontakt: </p>
+        <ul class="footer-start">
+            <h3>Kontakt</h3>
+            <li><a href="mailto:kx@disk.su.se">Email: kx@disk.su.se</a></li>
+            <li>Telefon: 076-948 95 60</li>
+        </ul>
+        <ul>
+            <h3>Adress</h3>
+            <li>Studentkåren DISK</li>
+            <li>Borgarfjordsgatan</li>
+            <li>164 40 Kista</li>
+        </ul>
+        <ul class="footer-center">
+            <h3>Sidor</h3>
+            <li><a href="home.html">Hem</a></li>
+            <li><a href="about.html"></i> Om oss</a></li>
+            <li><a href="cafe.html"></i>Snack overflow</a></li>
+            <li><a href="student.html"></i> Studentstöd</a></li>
+        </ul>
+        <ul class="footer-end">
+            <h3>Webmaster</h3>
+            <li><a href="mailto:webmaster@disk.su.se">Kontakt</a></li>
+            <li>GitHub</li>
+        </ul>
+
+
+
     </footer>
 </body>
 

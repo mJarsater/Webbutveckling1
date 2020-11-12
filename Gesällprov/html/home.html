@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/Gesällprov/styles.css">
+    <script src="/Gesällprov/script.js"></script>
+
+    <link rel="stylesheet" href="/Gesällprov/css/styles.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
@@ -43,18 +45,53 @@
     <header>
         <h1><a href="home.html">DISK</a></h1>
         <h2>Studentkår</h2>
-        <h3> - För alla nördar..</h3>
+        <h3> För dig som studerar vid DSV i Kista</h3>
         <button>BLI MEDLEM</button>
     </header>
+    <nav id="nav">
+        <ul>
+            <li><a class="selected" href="home.html"><i class="fas fa-home"></i> HEM</a></li>
+            <li><a href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
+            <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
+            <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
+        </ul>
+    </nav>
 
 
     <div class="container">
         <section>
-            <h2>Aktuellt</h2>
+            <h1>Nyheter</h1>
             <article class="article-card">
                 <div class="card bg-bacteria">
                     <h3 class="card-header">COVID-19 Update</h3>
-                    <p class="card-text">Komuniké från Orförande och Vice-ordförande.</p>
+                    <p class="card-text">Hejsan allihopa! Idag kom nya restriktioner från folkhälsomyndigheten (FHM) med
+                        anledningen av den ökade smittspridningen av Covid-19.
+                        (https://www.krisinformation.se/nyheter/2020/oktober/skarpta-allmanna-rad-infors-i-stockholm-vastra-gotaland-och-ostergotland?fbclid=IwAR1WPjyEUCPnh87V-UuG9H73ui-glICDrQ1Qgz6AnOoUnqAoYHHjcYBDV-I)
+
+                        DISK har hittills tagit sitt ansvar genom att följa de restriktioner och rekommendationer som
+                        FHM kommit ut med trots att rekommendationerna inte alltid varit avsedda för våra typer av event
+                        och slutna sällskap. Med det i åtanke kan vi inte heller med gott samvete bortse från de nya
+                        restriktionerna och det nya skärpta läget.
+
+                        De nya rekommendationerna uppmanar till att begränsa kontakt med människor utanför sitt hushåll.
+                        Att gå på våra event är såklart frivilligt, men det går inte att komma undan det faktum att
+                        många studenter reser kollektivt, och därmed kommer i kontakt med människor som inte har något
+                        annat val än att åka kollektivt.
+
+                        Detta är en av många anledningar till att vi därför väljer att ställa in alla fysiska event och
+                        möten fram till 19e November.
+
+                        Det tar emot för oss, eftersom vi vill finnas här för er studenter och kunna erbjuda både
+                        studentnytta och studiesociala aktiviteter. Men den ökade smittspridningen och våra medlemmars
+                        säkerhet är något som behöver tas på allvar. Vi hoppas självklart att vi alla kan ses igen snart
+                        och hoppas alla våra medlemmar tar hand om varandra. Givetvis kommer vårt arbete med
+                        studentnytta fortgå på distans i form av digitala event, DISK workshop och studiebevakning.
+
+                        Om ni har några frågor får ni gärna kontakta vårt presidiepar via ordf@disk.su.se
+
+                        Ta hand om er,
+                        DISK Ordförande & Vice ordförande
+                        Emilia Kaufeldt & Linnea Eriksson</p>
                     <button class="card-button">Läs mer</button>
                 </div>
                 <div class="card bg-protocol">
@@ -96,41 +133,44 @@
                         fugit
                         harum aperiam, provident sapiente saepe repellendus.</p>
                     <button class="card-button">Läs mer</button>
-                    <h5 class="card-author">av: Emilia Kaufeldt & Linnea Eriksson</h5>
-                </div>
-                <div class="card">
-                    <h3 class="card-header">Annan nyhet!</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ab fuga
-                        tempora accusantium
-                        fugit
-                        harum aperiam, provident sapiente saepe repellendus.</p>
-                    <button class="card-button">Läs mer</button>
-                    <h5 class="card-author">av: Emilia Kaufeldt & Linnea Eriksson</h5>
-                </div>
-                <div class="card">
-                    <h3 class="card-header">Annan nyhet!</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ab fuga
-                        tempora accusantium
-                        fugit
-                        harum aperiam, provident sapiente saepe repellendus.</p>
-                    <button class="card-button">Läs mer</button>
-                    <h5 class="card-author">av: Emilia Kaufeldt & Linnea Eriksson</h5>
+                    <h5 class="card-author">Emilia Kaufeldt & Linnea Eriksson</h5>
                 </div>
             </article>
         </section>
-        <aside>
-            <h2>Kommande event</h2>
-            <ul>
-                <li>11/11 - Onsdagspub</li>
-                <li>12/11 - Workshop</li>
-                <li>16/11 - Träffa Accenture</li>
-                <li>18/11 - Onsdagspub</li>
-                <li>19/11 - Workshop</li>
-                <li>25/11 - Onsdagspub</li>
-                <li>26/11 - Workshop</li>
-            </ul>
-        </aside>
 
+        <section class="second-section">
+            <section id="upcomming_events">
+                <h1>Kommande event</h1>
+                <p>Under terminen sker det massor med olika event, det kan vara spelkvällar, karaoke, företagsbesök,
+                    pingisturnering, pub eller någonting helt annat. <br>
+                    Ta chansen och var med på allt kul!</p>
+            </section>
+
+            <section id="events">
+                <div class="event" id="academic_event">
+                    <h2>Academic Work i Foo Bar</h2>
+                    <h3>2/12-2020</h3>
+                    <p>Träffa representanter från accenture på onsdagspuben den 2:a decemeber.</p>
+
+                </div>
+                <div class="event" id="innofactor_event">
+                    <h2>Mingel med Innofactor</h2>
+                    <h3>6/12-2020</h3>
+                    <p>Styrelsen kallar till möte för samtliga sektionsrepresentanter</p>
+
+                </div>
+                <div class=" event" id="styrelsemote_event">
+                    <h2>Årsmöte</h2>
+                    <h3>22/12-2020</h3>
+                    <p>Styrelsen kallar till årsmöte för samtliga <br> medlemmar.</p>
+
+                </div>
+                <div id="slideshow_nav">
+                    <a id="prev" onclick="navigate(-1)"> Prev</a>
+                    <a id="next" onclick="navigate(1)">Next</a>
+                </div>
+            </section>
+        </section>
 
     </div>
 
@@ -162,5 +202,6 @@
     </footer>
 
 </body>
+<script src="/Gesällprov/script.js"></script>
 
 </html>
