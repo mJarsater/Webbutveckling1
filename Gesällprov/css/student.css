@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-image: url(/Gesällprov/images/landing_pen.jpg);
+    background-size: 100%;
+    color: white;
+    height: 100vh;
+    text-align: center;
+}
+
+header h1{
+    text-shadow: 2px 2px 5px black;
+    font-size: 98px;
+    font-family: "Ubuntu";
+    text-decoration: none;
+}
+
+
+
+header h2{
+    text-shadow: 2px 2px 5px black;
+    font-size: 28px;
+    font-family: "Ubuntu";
+    margin-top: -1rem;
+}
+
+header h3{
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+
+
+nav{
+    font-size: 19px;
+    font-weight: 700;
+    box-shadow: 0 2px 2px -2px black;
+    padding: 1rem;
+    background: black;
+    background-size: 100%;
+    background-position: center;
+    z-index: 1;
+    border: 4px solid black;
+    width: 100%;
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+i{
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+a:hover > i{
+    color: yellow;
+}
+
+article a{
+    color: black;
+    text-decoration: underline;
+}
+
+section h1{
+    margin: 3rem;
+    text-align: center;
+}
+
+article{
+    width: 100%;
+}
+
+article p, h2 ,img{
+    margin: 0rem 6rem;
+}
+
+img{
+    box-shadow: 2px 2px 5px black;
+}
+
+
+#handledning{
+    text-align: center;
+    background-color: white;
+    height: 20rem;
+}
+
+#handledning img{
+    width: 25rem;
+    float: right;
+    margin-left: 0;
+}
+
+#handledning h2{
+    text-align: start;
+}
+
+#handledning p{
+    text-align: start;
+    width: 45%;
+    float: left;
+    margin-top: 1rem;
+    margin-right: 0;
+}
+
+#studiebevakning{
+    text-align: center;
+    background-color: white;
+    height: 20rem;
+    background-color: rgb(249, 195, 0);
+}
+
+#studiebevakning h2{
+    text-align: end;
+    padding-top: 2rem;
+}
+
+#studiebevakning p{
+    text-align: start;
+    width: 50%;
+    float: right;
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+#studiebevakning img{
+    width: 20rem;
+    float: left;
+    margin-right: 0;
+    margin-top: 2rem;
+}
+
+#skyddsombud{
+    text-align: center;
+    height: 30rem;
+    background-color: black;
+    color: white;
+}
+
+#skyddsombud img{
+    box-shadow: 2px 2px 5px white;
+    width: 30rem;
+    float: right;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+#skyddsombud h2{
+    text-align: start;
+    padding-top: 2rem;
+}
+
+#skyddsombud p{
+    text-align: start;
+    width: 35%;
+    float: left;
+    margin-right: 0;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+footer {
+    margin-top: 5rem;
+    bottom: 0;
+    height: 10rem;
+    display: flex;
+    width: 100%;
+    background-size: 100%;
+
+    justify-content: space-evenly;
+  }
+
+
+  footer ul{
+      text-align: center;
+      display: table-cell;
+      padding: 2rem;
+      width: 25%;
+  }
+
+  footer a{
+    overflow: hidden;
+    color:black;
+  }
+  footer a:hover{
+      padding: 0;
+  }
+
+
+
+
+@media screen and (max-width: 1500px){
+
+    header{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1220px){
+
+}
+
+@media screen and (max-width: 1000px){
+
+
+}
+
+@media screen and (max-width: 800px){
+    
+    nav li {
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
+    footer ul{
+        display: inline;
+    }
+
+
+}
