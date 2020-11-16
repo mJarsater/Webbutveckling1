@@ -105,15 +105,18 @@ article{
 #article-one{
     text-align: center;
     height: 15rem;
+
 }
 
 #article-one h2{
+    text-align: start;
     padding-bottom: 1rem;
 }
 
 #article-one img{
     float: right;
     width: 40%;
+    max-width: 30rem;
     box-shadow: 2px 2px 5px black;
 }
 
@@ -137,12 +140,13 @@ article{
 #article-two p{
     text-align: start;
     float: right;
-    width: 45rem;
+    width: 60%;
     padding: 1rem;
 }
 
 #article-two{
-    text-align: center;
+    text-align: end;
+    padding: 1rem;
 }
 
 #article-three{
@@ -159,11 +163,16 @@ article{
 }
 
 #article-three ul{
+
     display: flex;
 }
 
 #article-three li{
     width: 25%;
+}
+
+#article-three li figure{
+    margin-top: 2rem;
 }
 
 #article-three li img{
@@ -216,7 +225,6 @@ footer {
     display: flex;
     width: 100%;
     background-size: 100%;
-
     justify-content: space-evenly;
   }
 
@@ -236,7 +244,10 @@ footer {
       padding: 0;
   }
 
-
+#bottom{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
 
 
 @media screen and (max-width: 1500px){
@@ -244,20 +255,163 @@ footer {
     header{
         height: 60vh;
     }
+
 }
 
+
+/* Över 1220 px */
 @media screen and (min-width: 1220px){
 
+    
+    #article-one{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    #article-one h2{
+        font-size: 29px;
+        margin-bottom: 1rem;
+    }
+
+    #article-one p{
+        margin-bottom: 3rem;
+        width: 55%;
+        font-size: large;
+        margin: 0rem 2rem 0 0;
+        column-count: 2;
+        overflow: hidden;
+    }
+    #article-button{
+        margin-top: 5rem;
+    }
+
+    #article-two img{
+        width:25%;
+        max-width: 20rem;
+    }
+
+    #article-two{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #article-two h2{
+        font-size: 29px;
+        margin-bottom: 1rem;
+    }
+
+    #article-two p{
+        margin-bottom: 3rem;
+        width: 70%;
+        font-size: large;
+        margin: 0rem 2rem 0 0;
+        column-count: 2;
+        overflow: hidden;
+    }
+
+}
+
+/* Under 1050px */
+@media screen and (max-width: 1050px){
+
+    #article-one{
+        display: block;
+        height: 100%;
+        margin-bottom: 10rem;
+    }
+
+    #article-one h2{
+        text-align: center;
+    }
+    #article-one p{
+        max-width: 100%;
+        width: 100%;
+
+    }
+
+    #article-two h2{
+        text-align: center;
+    }
+
     #article-one img{
-        width: 30rem;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #article-three{
+        text-align: center;
+    }
+
+    #article-three ul{
+        display: block;
+        
+    }
+
+    #article-three li{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        display: inline-block;
+    }
+    #article-three li figure{
+    
+        margin: 1rem auto;
+        width: 50%;
+        
+    }
+
+}
+
+@media screen and (max-width: 1050px){
+
+
+    footer{
+        display: block;
+    }
+    footer ul{
+        display: block;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 920px){
 
+    #article-two{
+        display: block;
+        height: 100%;
+        
+    }
+
+    #article-two p{
+        max-width: 100%;
+        width: 100%;
+ }
+    #article-two img{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #article-three{
+        margin-top: 15rem;
+    }
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 750px){
+    nav ul{
+        display: block;
+    }
 
+    nav li{
+        margin-top: 1rem;
+    }
+
+    #article-one {
+        height: 30rem;
+    }
+
+    #article-two{
+        height: 45rem;
+    }
 }
