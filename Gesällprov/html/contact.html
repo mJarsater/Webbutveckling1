@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/Gesällprov/css/student.css">
+    <link rel="stylesheet" href="/Gesällprov/css/contact.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
@@ -21,103 +21,24 @@
         <h3> För dig som studerar vid DSV i Kista</h3>
     </header>
     <nav id="nav">
-        <ul>
-            <li><a href="home.html"><i class="fas fa-home"></i> HEM</a></li>
-            <li><a href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
-            <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
-            <li><a class="selected" href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
-        </ul>
+
     </nav>
+
+
     <section>
-        <h1>Hur kan vi hjälpa dig?</h1>
-        <article id="handledning">
-            <figure>
-                <img src="/Gesällprov/images/handledning.jpg" alt="Handledning">
-            </figure>
-            <h2>Handledning</h2>
-            <p>Disk Workshop är en generell handledning som äger rum 10.00-16.00 varje torsdag i Foo Bar, med undantag
-                för röda dagar. Under perioder då många är i behov av handledning, till exempel PROG1, kan denna tid
-                ibland förlängas till 18.00.</p>
+        <h1>Kontakta oss</h1>
 
-            <p>DISK Workshop är öppet för alla som studerar på DSV, oavsett kurs, och är ett grymt hjälpmedel när man
-                fastnat på en uppgift.</p>
-
-            <p>Det går antingen att sitta i Foo Bar, där handledningen främst sker, eller så kan man sitta i resterande
-                delar av skolan. Oavsett om man sitter i Foo Bar eller inte, behöver man skriva upp sig på
-                <a href="https://www.handledning.dsv.su.se">handledning.dsv.su.se</a> för att ställa sig i kö.</p>
-
-        </article>
-
-        <article id="studiebevakning">
-            <figure>
-                <img src="/Gesällprov/images/lecture.jpg" alt="Handledning">
-            </figure>
-            <h2>Studiebevakning</h2>
-            <p>
-                Som studentkår är det DISKs uppgift att se till att utbildningarna på institutionen håller en hög
-                kvalitet. Detta arbete görs genom så kallad studiebevakning. Bevakningen
-                på DISK utförs av två personer som ser till att personal på institutionen följer de regler som finns.
-                Studiebevakarna granskar också ny kurslitteratur när föreläsare vill byta ut
-                den gamla. Studiebevakarna för en löpande dialog med institutionen för att utveckla kvalitetsarbete som
-                sker.
-            </p>
-        </article>
-
-        <article id="skyddsombud">
-            <figure>
-                <img src="/Gesällprov/images/classmates.jpg" alt="Handledning">
-            </figure>
-            <h2>Skyddsombud</h2>
-            <p>
-                Ett studerandeskyddsombud sitter i DISKs styrelse och är precis vad namnet säger, ett skyddsombud för
-                studenter. Det studerandeskyddsombudet finns till för att hjälpa studenterna på Institutionen för Data-
-                och Systemvetenskap med de olika problem som kan dyka upp i studiemiljön.
-            </p>
-
-            <p>
-                Skillnaden mellan ett studerandeskyddsombud och ett “riktigt” skyddsombud är att ett
-                studerandeskyddsombud saknar de rättigheter och skyldigheter som ett skyddsombud i normala fall har.
-                Detta innebär att ett studerandeskyddsombud inte har tillgång till konfidentiell information, inte har
-                stopprätt och inte får påkalla tillsynsmyndighet. De plikter
-                som ett studerandeskyddsombud saknar är till exempel att de inte är förpliktigade att polisanmäla
-                händelser som normalt ska polisanmälas, till exempel hot och liknande
-                situationer.
-            </p>
-            <p>
-                Påkalla tillsynsmyndighet får man dock göra i egenskap av enskild student, den rättigheten har
-                vi alla.
-                <span style="font-style:italic">Studerandeskyddsombudet är även belagt med tystnadsplikt.</span>
-            </p>
-
-
-        </article>
     </section>
-    <footer>
-        <ul class="footer-start">
-            <h3>Kontakt</h3>
-            <li><a href="mailto:kx@disk.su.se">Email: kx@disk.su.se</a></li>
-            <li>Telefon: 076-948 95 60</li>
-        </ul>
-        <ul>
-            <h3>Adress</h3>
-            <li>Studentkåren DISK</li>
-            <li>Borgarfjordsgatan</li>
-            <li>164 40 Kista</li>
-        </ul>
-        <ul class="footer-center">
-            <h3>Sidor</h3>
-            <li><a href="home.html">Hem</a></li>
-            <li><a href="about.html"></i> Om oss</a></li>
-            <li><a href="cafe.html"></i>Snack overflow</a></li>
-            <li><a href="student.html"></i> Studentstöd</a></li>
-        </ul>
-        <ul class="footer-end">
-            <h3>Webmaster</h3>
-            <li><a href="mailto:webmaster@disk.su.se">Kontakt</a></li>
-            <li>GitHub</li>
-        </ul>
+    <form action="">
+        <label for="name">Namn</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="subject">Ämne</label>
+        <input type="text" name="subject" id="subject">
+        <textarea name="message" id="messagearea" cols="30" rows="10"></textarea>
+    </form>
 
-    </footer>
 </body>
 
 </html>
