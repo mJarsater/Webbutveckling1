@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="/Gesällprov/script.js"></script>
     <link rel="stylesheet" href="/Gesällprov/css/contact.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
-    <script src="/Gesällprov/js/index.js"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
     <meta name="generator">
@@ -32,8 +32,11 @@
     </section>
     <form action="">
         <input type="text" placeholder="Namn" name="name" id="name" required>
-
         <input type="text" placeholder="Email" name="subject" id="subject" required>
+        <label><i class="far fa-folder-open"></i> Bifoga filer
+            <input type="file" multiple name="file" id="fileInput">
+        </label>
+        <p id="selectedFiles"></p>
         <textarea name="message" id="messagearea" cols="30" rows="10"></textarea>
         <input id="submitBtn" type="submit" value="Skicka">
     </form>

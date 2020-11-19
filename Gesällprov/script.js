@@ -1,17 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = function () {
 
-    window.onscroll = function () { scrollFunction() };
+    var attachBtn = document.getElementById("fileInput");
 
-    function scrollFunction() {
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
-        if (window.pageYOffset > sticky) {
-            nav.classList.add("sticky");
-        } else {
-            nav.classList.remove("sticky");
+    attachBtn.onchange = function () {
+        console.log("hej");
+        var input = document.getElementById('fileInput');
+        var output = document.getElementById('selectedFiles');
+        var children = "";
+        for (var i = 0; i < input.files.length; ++i) {
+
+            children += '<p>' + input.files.item(i).name + '<i class="far fa-file-code"></i>' + '  ' + '</p>';
         }
+        output.innerHTML = children;
     }
-})
+
+}
+
 
 var index = 1;
 
@@ -38,4 +42,5 @@ function showSlide(n) {
     }
     slides[index - 1].style.display = "block";
 }
+
 

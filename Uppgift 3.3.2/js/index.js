@@ -1,4 +1,3 @@
-
 window.onload = function () {
     var input = document.getElementById('fileInput');
     var output = document.getElementById('output');

@@ -12,7 +12,6 @@ header{
     background-image: url(/Gesällprov/images/landing_pen.jpg);
     background-size: 100%;
     color: white;
-    height: 100vh;
     text-align: center;
 }
 
@@ -61,13 +60,10 @@ a{
 }
 
 i{
-    transition: all 0.4s ease-in-out;
-    color: white;
+
+    color: black;
 }
 
-a:hover > i{
-    color: yellow;
-}
 
 
 section h1{
@@ -95,6 +91,32 @@ form{
     cursor: pointer;
 }
 
+label{
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid black;
+    display: table;
+    margin-bottom: 2rem;
+}
+
+label:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+label:hover > i{
+    color: white;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+ p{
+    display: inline;
+    margin-right: 0.5rem;
+}
 
 input{
     border-top: none;
@@ -125,6 +147,7 @@ textarea{
     padding: 0.5rem;
     font-size: 17px;
     resize: none;
+    margin-top: 1rem;
 }
   @media screen and (max-width: 1500px){
 
