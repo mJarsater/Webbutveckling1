@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="/Gesällprov/css/contact.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
+    <script src="/Gesällprov/js/index.js"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
     <meta name="author" content="Martin Jarsäter">
     <meta name="generator">
@@ -30,13 +31,11 @@
 
     </section>
     <form action="">
-        <label for="name">Namn</label>
-        <input type="text" name="name" id="name">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        <label for="subject">Ämne</label>
-        <input type="text" name="subject" id="subject">
+        <input type="text" placeholder="Namn" name="name" id="name" required>
+
+        <input type="text" placeholder="Email" name="subject" id="subject" required>
         <textarea name="message" id="messagearea" cols="30" rows="10"></textarea>
+        <input id="submitBtn" type="submit" value="Skicka">
     </form>
 
 </body>
