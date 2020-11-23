@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="/Gesällprov/script.js"></script>
-
     <link rel="stylesheet" href="/Gesällprov/css/home.css">
     <script src="https://kit.fontawesome.com/1c6c9ab4a1.js" crossorigin="anonymous"></script>
     <meta name="description" content="Hemsida för kursen Webbutveckling 1">
@@ -48,12 +46,15 @@
         <h3> För dig som studerar vid DSV i Kista</h3>
         <button>BLI MEDLEM</button>
     </header>
-    <nav id="nav">
+    <nav class="topnav" id="nav">
         <ul>
             <li><a class="selected" href="home.html"><i class="fas fa-home"></i> HEM</a></li>
             <li><a href="about.html"><i class="fas fa-question-circle"></i> OM OSS</a></li>
             <li><a href="cafe.html"><i class="fas fa-cookie-bite"></i> SNACK OVERFLOW</a></li>
             <li><a href="student.html"><i class="fas fa-life-ring"></i> STUDENTSTÖD</a></li>
+            <li><a href="javascript:void(0);" class="icon" id="responsive-icon">
+                    <i class="fa fa-bars"></i>
+                </a></li>
         </ul>
     </nav>
 
@@ -223,13 +224,13 @@
         </ul>
         <ul class="footer-end">
             <h3>Webmaster</h3>
-            <li><a href="mailto:webmaster@disk.su.se">Kontakt</a></li>
-            <li>GitHub</li>
+            <li><a id="contact-webmaster">Kontakt</a></li>
+            <li><a href="https://github.com/mJarsater" target="_blank">GitHub</a></li>
         </ul>
-
     </footer>
 
 </body>
-<script src="/Gesällprov/script.js"></script>
+<script src="/Gesällprov/js/home.js"></script>
+<script src="/Gesällprov/js/index.js"></script>
 
 </html>
