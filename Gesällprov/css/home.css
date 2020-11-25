@@ -110,64 +110,17 @@ a.icon{
     background-color: black;
 }
 
-#article-button button{
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    color: black;
-    background-color: whitesmoke;
-    border: 2px black solid;
-    border-radius: 2px;
-    padding: 1rem;
-    width: 250px;
-    margin: auto 0 auto 0;
-    transition: all 0.4s ease-in-out;
-}
+
 
 span{
     font-weight: 600;
 }
 
-article{
-    margin: 0;
-}
-
-
-
-.article-one{
-    width: 100%;
-    height: 45rem;
-    margin: 0;
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-
-.article-one h2,p{
-    text-align: start;
-    padding: 1rem;
-    margin: 3rem 2rem;
-}
-
-.article-one p{
-    font-size: 1.5rem;
-}
 
 .selected > i{
     color: yellow;
 }
 
-section{
-    width: 80%;
-    margin: 4rem auto auto auto;
-
-}
-
-section h1{
-    font-size: 48px;
-    margin-bottom: 2rem;
-    text-align: start;
-}
 
 .container{
     margin: 0  0rem;
@@ -175,13 +128,10 @@ section h1{
 }
 
 
-article a{
-    color: black;
-    text-decoration: underline;
-}
 
-article a:hover{
-    padding-left: 0;
+section h1{
+    font-size: 48px;
+    text-align: start;
 }
 
 
@@ -302,6 +252,109 @@ article a:hover{
     gap: 3rem;
 }
 
+
+.disk-logo{
+    text-align: center;
+    width: 40%;
+    padding: 2rem;
+    float: right;
+}
+
+.disk-logo img{
+    max-width: 100%;
+}
+
+
+
+.accordion-section{
+    padding: 2rem;
+    width: 60%;
+    background-color: white;
+    color: black;
+    float: left;
+
+}
+
+.accordion-section p{
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+
+.first-section h1{
+    padding: 2rem;
+}
+
+.accordion{
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: start;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: black solid 2px;
+    outline: none;
+    transition: 0.5s;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion i{
+    color: black;
+}
+
+.animateIcon{
+    transform: rotateX('90deg');
+}
+
+
+
+.panel{
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.panel p{
+    padding-left: 1rem; 
+    font-weight: 400;
+}
+
+.panel a{
+    color: black;
+    display: inline;
+    margin:0;
+    padding:0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.panel h3{
+    padding-left: 1rem;
+    text-align: start;
+}
+
+.active{
+    border-bottom: none;
+}
+
+.active , .accordion:hover{
+
+    background-color: white;
+    color: black;
+}
+
+
+.active > .fa-chevron-down{
+    transform: rotateZ(180deg);
+}
+
 .second-section{
     padding: 2rem;
     width: 100%;
@@ -322,9 +375,11 @@ article a:hover{
     text-align: start;
 }
 
+#upcomming_events{
+    width: 30%;
+}
+
 .second-section section{
-    margin: auto;
-    width: 40%;
     height: 15rem;
 }
 
@@ -337,10 +392,12 @@ article a:hover{
 
 
 #events{
+    text-align: center;
     background-color: white;
     color: black;
     position: relative;
     padding: 1rem;
+    width: 70%;
 }
 
 #event{
@@ -388,6 +445,7 @@ article a:hover{
     background-color: rgb(249, 195, 0);
     color: black;
     display: flex;
+    justify-content: space-between;
 }
 
 .third-section img{
@@ -401,9 +459,14 @@ article a:hover{
     padding: 0;
 }
 
-.third-section section{
-    width: 40%;
 
+.contact-section{
+    width: 60%;
+    padding-right: 1rem;
+}
+
+.contact-image{
+    width: 40%;
 }
 
 .kontakt-button{
@@ -487,11 +550,29 @@ footer {
 
 @media screen and (max-width: 1000px){
 
+    .accordion-section{
+        width: 100%;
+        float: none;
+    }
+
+    .disk-logo{
+        width: 100%;
+        float: none;
+    }
+
     .second-section{
         display: block;
     }
 
     .second-section section{
+        width: 100%;
+    }
+
+    #events{
+        width: 100%;
+    }
+
+    #upcomming_events{
         width: 100%;
     }
 

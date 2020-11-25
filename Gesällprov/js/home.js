@@ -1,7 +1,22 @@
 window.onload = function () {
     var contactBtn = document.getElementById("contactBtn");
     var contactWebmaster = document.getElementById("contact-webmaster");
+    var accordion = document.getElementsByClassName("accordion");
+    var arrowIcon = document.getElementsByClassName("fas");
+    var index;
     var myWindow;
+
+    for (index = 0; index < accordion.length; index++) {
+        accordion[index].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
 
     contactBtn.onclick = function () {
         myWindow = window.open("/Gesällprov/html/contact.html", "_blank", "width=500, height=500");
