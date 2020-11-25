@@ -402,35 +402,32 @@ section h1{
 
 .event{
     display: none;
-
+    
 }
 
 .event p{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    margin: auto;
-
+    margin-top: 1rem;
 }
+
+#innofactor_event{
+    background-image: url(/Gesällprov/images/innofactor.png);
+    background: no-repeat;
+}
+
+#academic_event{
+    background-image: url(/Gesällprov/images/innofactor.png);
+    background: no-repeat;
+}
+
 
 #academic_event img{
     max-width: 100%;
-    max-height: 100%;;
+    max-height: 9rem;
 }
 
 #innofactor_event img{
     max-width: 100%;
     max-height: 100%;
-}
-
-#styrelsemote_event{
-    height: 15rem;
-    overflow: hidden;
-}
-
-#styrelsemote_event img{
-    margin: 1rem;
-    height: 6rem;
 }
 
 #slideshow_nav{
@@ -460,13 +457,13 @@ section h1{
   }
 
   .prev{
-      left: 0;
+    left: 0;
   }
 
 
-  #slideshow_nav i:hover{
-      color: rgb(249, 195, 0);
-  }
+#slideshow_nav i:hover{
+      color: rgb(249, 195, 0);      
+}
 
 .third-section{
     margin-top: 0;
