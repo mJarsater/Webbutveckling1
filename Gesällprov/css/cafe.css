@@ -58,7 +58,7 @@ nav{
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 a{
@@ -66,6 +66,7 @@ a{
     color: white;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
+    margin: 0 1rem;
 }
 
 i{
@@ -79,6 +80,10 @@ a:hover > i{
 
 .selected > i{
     color: yellow;
+}
+
+a.icon{
+    display: none;
 }
 
 article{
@@ -97,6 +102,7 @@ article img{
 
 article p{
     margin-left: 2rem;
+    margin-bottom: 1rem;
     width: 50%;
     float: left;
     padding-top: 1rem;
@@ -175,10 +181,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 1220px){
-
-   
+@media screen and (min-width: 1300px){
+    a{
+        margin: 0 5rem;
     }
+}
 
 @media screen and (max-width: 1000px){
 

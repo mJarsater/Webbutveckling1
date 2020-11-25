@@ -13,6 +13,7 @@ header{
     background-size: 100%;
     color: white;
     height: 100vh;
+    min-height: 30vh;
     text-align: center;
 }
 
@@ -77,7 +78,7 @@ nav{
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 a{
@@ -85,6 +86,7 @@ a{
     color: white;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
+    margin: 0 1rem;
 }
 
 i{
@@ -94,6 +96,10 @@ i{
 
 a:hover > i{
     color: yellow;
+}
+
+a.icon{
+    display: none;
 }
 
 
@@ -466,6 +472,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 1300px){
+    a{
+        margin: 0 5rem;
+    }
+}
+
 @media screen and (max-width: 1220px){
 
     .article-card{
@@ -481,6 +493,14 @@ footer {
 
     .second-section section{
         width: 100%;
+    }
+
+    header {
+        height: 30vh;
+    }
+
+    header h3 {
+        margin-top: 0;
     }
 }
 
@@ -504,6 +524,8 @@ footer {
     footer ul{
         display: inline;
     }
+
+    
 
 
 }
