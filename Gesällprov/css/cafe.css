@@ -86,34 +86,37 @@ a.icon{
     display: none;
 }
 
-article{
-    margin: 3rem 0rem;
-    width: 100%;
+section h2{
+    padding-top: 2rem;
     text-align: center;
 }
 
-article img{
-    margin: 1rem 2rem;
-    float: right;
+section h3{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#form-image{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: white;
+}
+
+.cafe-form{
+    text-align: start;
     width: 40%;
-    height: 100%;
-    box-shadow: 2px 2px 5px black;
+    padding: 0;
 }
 
-article p{
-    margin-left: 2rem;
+.cafe-form p{
     margin-bottom: 1rem;
-    width: 50%;
-    float: left;
-    padding-top: 1rem;
-    text-align: start;
 }
 
-form{
-    margin-left: 2rem;
-    text-align: start;
+.cafe-form form{
     display: block;
-    width: 50%;
+    width: 100%;
 }
 
 textarea{
@@ -138,7 +141,16 @@ input:hover{
     cursor: pointer;
 }
 
+.cafe-image {
+    text-align: center;
+    width: 50%;
+}
 
+.cafe-image img{
+    
+    width: 100%;
+    max-width: 35rem;
+}
 
 
 footer {
@@ -186,6 +198,26 @@ footer {
         margin: 0 5rem;
     }
 }
+
+@media screen and (max-width: 1200px){
+    #form-image{
+        display: block;
+    }
+
+    .cafe-image{
+        width: 100%;
+        margin-bottom: 2rem;
+
+    }
+    .cafe-form{
+        max-width: 35rem;
+        margin: auto;
+        width: 100%;
+
+    }
+
+}
+
 
 @media screen and (max-width: 1000px){
 

@@ -1,7 +1,5 @@
 window.onload = function () {
-
     var btn = document.getElementById("btn");
-
 
     btn.onclick = function () {
         var number1 = document.getElementById("number1").value;
@@ -17,5 +15,4 @@ window.onload = function () {
         xhttp.open("GET", domain, true);
         xhttp.send();
     }
-
-}   
+}
