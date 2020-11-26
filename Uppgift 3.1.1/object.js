@@ -1,18 +1,19 @@
-var date = new Date();
+window.onload = function () {
+    document.getElementById("updateBtn").addEventListener("click", updateFunction);
+    document.getElementById("showCmntBtn").addEventListener("click", printArray);
+    document.getElementById("calculateBtb").addEventListener("click", calculateFunction);
+    document.getElementById("convertBtn").addEventListener("click", convertToInteger);
+    document.getElementById("replaceBtn").addEventListener("click", replace);
+    document.getElementById("regExBtn").addEventListener("click", regExFunction);
+    var date = new Date();
+    document.getElementById("date").textContent = date;
+}
 
-document.getElementById("date").textContent = date;
 
-function myFunction() {
+function updateFunction() {
     var newDate = new Date();
     document.getElementById("date").textContent = newDate;
 }
-
-var array = [];
-function getText() {
-    var text = document.getElementById("input").value;
-    array.push(text);
-}
-
 function printArray() {
     var comment = "<ul>";
     for (var i = 0; i < array.length; i++) {
@@ -21,6 +22,15 @@ function printArray() {
     comment += "</ul>";
     document.getElementById("comment").innerHTML = comment;
 }
+
+
+var array = [];
+function getText() {
+    var text = document.getElementById("input").value;
+    array.push(text);
+}
+
+
 
 function calculateFunction() {
     var tal1 = document.getElementById("tal1").value;
