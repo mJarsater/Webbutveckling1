@@ -3,28 +3,6 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("button").click(function () {
-                $("#p1").fadeIn(1000);
-                $("#p2").fadeIn(2000);
-                $("#p3").fadeIn(3000);
-                $("#fadeOutBtn").fadeIn(4000);
-            });
-            $("#fadeOutBtn").click(function(){
-                $("#p1").fadeOut(1000);
-                $("#p2").fadeOut(2000);
-                $("#p3").fadeOut(3000);
-                $("#fadeOutBtn").fadeOut(4000);
-            })
-            $("#fadeInOutBtn").click(function(){
-                $("#p1").fadeToggle(1000);
-                $("#p2").fadeToggle(2000);
-                $("#p3").fadeToggle(3000);
-                $("#fadeOutBtn").fadeToggle(4000);
-            })
-        });
-    </script>
     <script src="page2.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -46,15 +24,19 @@
     </header>
     <section>
         <button id="fadeInOutBtn">Fade in/out</button>
-        <button>Fade in..</button>
-        <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+        <button id="fadeIn">Fade in..</button>
+        <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi
+            nisi,
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
-        <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+        <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi
+            nisi,
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
-        <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi nisi,
+        <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque explicabo, commodi quam, in animi
+            nisi,
             similique dicta quae autem eius dignissimos distinctio neque saepe deleniti?</p>
-            <button id="fadeOutBtn">Fade out..</button>
+        <button id="fadeOutBtn">Fade out..</button>
     </section>
 </body>
+<script src="fade.js"></script>
 
 </html>
