@@ -1,56 +1,82 @@
-var myVariable;
+var intervalVar;
+var timeOutVar;
 
+/*  Funktion som körs när fönstret har laddat.*/
 window.onload = function () {
-    myVariable = setInterval(timer, 1000);
+
+
+
+    /*  Alert med texten i.*/
     alert("Den här hemsidan behövs för denna uppgift");
+
+    /*  Confirm som kräver ett svar från användaren.*/
     confirm("Har du förstått?");
+
+
     languageFunction();
 
+    /*  Sätter interVal till setInterval(timer)*/
+    intervalVar = setInterval(timer);
+
+
+
+
+    /*  Promt som kräver input från användaren*/
     var favoriteLanguage = prompt("Vad är ditt favoritspråk att programmera i?");
     if (favoriteLanguage != "") {
+        /*  Skriver ut svaret från använaren*/
         document.getElementById("greeting").textContent = "Vad roligt att höra, jag gillar också " + favoriteLanguage + "!";
     } else {
+        /*  Körs om inget svar finns*/
         document.getElementById("greeting").textContent = "Det är okej. Alla kan inte ha en favorit.";
     }
-    function timer() {
-        var date = new Date();
-        var time = date.toLocaleTimeString();
-        document.getElementById("time").textContent = time;
-    }
 
-    setInterval(function () {
+    /*  Sätter ett interval på 1000 ms,
+        då alerten körs i slutet av 
+        detta inteval. Körs kontinuerligt*/
+    intervalVar = setInterval(function () {
         alert("Är du kvar?");
     }, 10000)
 
-    var myOtherVar;
-    myOtherVar = setTimeout(function () {
+    /*  Sätter ett timeout på 5000 ms,
+        då alerten körs i slutet av 
+        detta inteval. Körs bara en gång*/
+    timeOutVar = setTimeout(function () {
         alert("Nu har du varit här länge...");
     }, 5000);
 
-    function languageFunction() {
-        var text = "Jag ser att du använder " +
-            navigator.language
-            + " för din browser";
-        document.getElementById("language").innerHTML = text;
+}
 
-    }
+/*  Funktion som skriver vilket språk
+    användaren har på sin browser. */
+function languageFunction() {
+    var text = "Jag ser att du använder " +
+        navigator.language
+        + " för din browser";
+    document.getElementById("language").innerHTML = text;
 
 }
 
-var myWindow;
-
+/*  Funktion som öppnar ett nytt fönster,
+    mes bestämd bred och höjd.  */
 function openFuntion() {
-    myWindow = window.open("https://www.w3schools.com", "_blank", "width=500, height=500");
+    myWindow = window.open(
+        "https://www.w3schools.com", "_blank",
+        "width=500, height=500");
 }
 
+/*  Funktion som stänger det tidigare
+    öppnade fönstret.   */
 function closeFunction() {
     myWindow.close();
 }
 
-function stopTime() {
-    clearInterval(myVariable);
-}
 
+/*  Funktion som kallar på på 
+    timeOutVar & intervalVar
+    med clearTimeout, respektive
+    clearInterval*/
 function noTimeout() {
-    clearTimeout(myOtherVar)
+    clearTimeout(timeOutVar)
+    clearInterval(intervalVar);
 }
