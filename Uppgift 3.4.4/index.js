@@ -1,6 +1,7 @@
 function logResults(json) {
-    console.log(json.data);
 
+
+    // Lägger till varje rätt data för varje element
     document.getElementById("username").append(" " + json.data.login);
     document.getElementById("repos").append(" " + json.data.public_repos);
     document.getElementById("followers").append(" " + json.data.followers);
@@ -9,6 +10,7 @@ function logResults(json) {
     document.getElementById("updated_at").append(" " + json.data.updated_at);
 }
 
+// Hämtar all data via API:et som returnes i json format
 $.ajax({
     url: `https://api.github.com/users/mjarsater`,
     dataType: "jsonp",
