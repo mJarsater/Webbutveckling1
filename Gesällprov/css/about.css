@@ -176,6 +176,16 @@ a.icon{
     margin: 0;
 }
 
+.google-maps{
+    background-color: black;
+    padding: 2rem;
+    width: 100%;
+}
+
+#map{
+    height: 25rem;
+}
+
 
 #article-three{
     display: block;
@@ -423,9 +433,6 @@ footer {
         margin-bottom: 2rem;
     }
 
-    #article-three{
-        margin-top: 15rem;
-    }
 
 }
 
