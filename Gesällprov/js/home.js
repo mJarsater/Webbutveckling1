@@ -1,4 +1,5 @@
 window.onload = function () {
+    var memberBtn = document.getElementById("memberBtn");
     var menuBtn = document.getElementById("responsive-icon");
     var contactBtn = document.getElementById("contactBtn");
     var contactWebmaster = document.getElementById("contact-webmaster");
@@ -19,6 +20,10 @@ window.onload = function () {
                 panel.style.display = "block";
             }
         });
+    }
+
+    memberBtn.onclick = function () {
+        myWindow = window.open("https://medlem.disk.su.se/");
     }
 
     contactBtn.onclick = function () {
