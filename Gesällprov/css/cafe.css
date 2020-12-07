@@ -155,7 +155,7 @@ input:hover{
 #menu-section h1{
     text-align: center;
     font-size: 2.5rem;
-    color: rgba(224, 176, 0);
+    color: white;
 
 }
 
@@ -194,8 +194,11 @@ table tr{
     padding: 0;
 }
 #member-info{
+    padding-top: 2rem;
+    text-align: center;
     text-decoration: underline;
     font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -267,11 +270,11 @@ footer {
 @media screen and (max-width: 1000px){
 
     table th{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     table td{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     article{
