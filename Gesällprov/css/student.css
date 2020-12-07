@@ -12,7 +12,7 @@ header{
     background-image: url(/Gesällprov/images/landing_pen.jpg);
     background-size: 100%;
     color: white;
-    height: 100vh;
+    height: 30vh;
     text-align: center;
 }
 
@@ -21,6 +21,7 @@ header h1{
     font-size: 98px;
     font-family: "Ubuntu";
     text-decoration: none;
+    padding: 1rem;
 }
 
 
@@ -68,6 +69,7 @@ a{
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 i{
@@ -256,14 +258,6 @@ footer {
       padding: 0;
   }
 
-
-  @media screen and (max-width: 1500px){
-
-    header{
-        height: 60vh;
-    }
-
-}
 
 @media screen and (min-width: 1300px){
     a{

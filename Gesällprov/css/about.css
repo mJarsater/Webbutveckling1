@@ -12,8 +12,9 @@ header{
     background-image: url(/Gesällprov/images/landing_pen.jpg);
     background-size: 100%;
     color: white;
-    height: 100vh;
+    height: 30vh;
     text-align: center;
+
 }
 
 header h1{
@@ -21,6 +22,7 @@ header h1{
     font-size: 98px;
     font-family: "Ubuntu";
     text-decoration: none;
+    padding: 1rem;
 }
 
 
@@ -30,34 +32,6 @@ header h2{
     font-size: 28px;
     font-family: "Ubuntu";
     margin-top: -1rem;
-}
-
-header h3{
-    margin-top: 10rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px black;
-
-}
-
-header button{
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    color: black;
-    background-color: whitesmoke;
-    border: 2px black solid;
-    border-radius: 2px;
-    padding: 1rem;
-    width: 250px;
-    
-    transition: all 0.4s ease-in-out;
-    
-}
-
-header button:hover{
-    box-shadow: 2px 2px 5px black;
-    transform: scale(1.1);
-    cursor: pointer;
 }
 
 nav{
@@ -87,6 +61,7 @@ a{
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 i{
@@ -106,8 +81,6 @@ h1{
     text-align: center;
     padding: 2rem;
 }
-
-
 
 .aboutus{
     text-align: center;
@@ -296,13 +269,7 @@ footer {
 }
 
 
-@media screen and (max-width: 1500px){
 
-    header{
-        height: 60vh;
-    }
-
-}
 
 
 @media screen and (min-width: 1300px){

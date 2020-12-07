@@ -1,11 +1,8 @@
-window.onload = function () {
+/*window.onload = function () {
 
     var attachBtn = document.getElementById("fileInput");
 
-    var contactWebmaster = document.getElementById("contact-webmaster");
-
     attachBtn.onchange = function () {
-        console.log("hej");
         var input = document.getElementById('fileInput');
         var output = document.getElementById('selectedFiles');
         var children = "";
@@ -17,9 +14,7 @@ window.onload = function () {
     }
 
 
-    contactWebmaster.onclick = function () {
-        myWindow = window.open("/Gesällprov/html/webmaster.html", "_blank", "width=500, height=500");
-    }
+
 
 }
 
@@ -50,3 +45,4 @@ function showSlide(n) {
     slides[index - 1].style.display = "block";
 }
 
+*/
