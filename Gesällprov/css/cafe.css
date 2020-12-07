@@ -147,7 +147,7 @@ input:hover{
 }
 
 .cafe-image img{
-    
+    box-shadow: 2px 2px 5px black;
     width: 100%;
     max-width: 35rem;
 }
@@ -207,13 +207,16 @@ footer {
     .cafe-image{
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .cafe-image img{
+        max-width:  100%;
 
     }
+
     .cafe-form{
-        max-width: 35rem;
         margin: auto;
         width: 100%;
-
     }
 
 }

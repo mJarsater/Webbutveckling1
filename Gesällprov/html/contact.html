@@ -25,11 +25,16 @@
     </nav>
 
 
-    <section>
+    <section id="title-section">
         <h1>Kontakta oss</h1>
-
     </section>
-    <form action="">
+
+    <section id="thank-you-section">
+        <h1>Tack för att du kontaktar oss!</h1>
+        <h3>Tack <span id="sent-name"></span> för att du kontaktar oss!</h3>
+        <p>Vi återkommer så snart vi kan, du kan fönstret genom att klicka <a id="close-link" href="">här</a></p>
+    </section>
+    <form id="contact-form" action="">
         <input type="text" placeholder="Namn" name="name" id="name" required>
         <input type="text" placeholder="Email" name="subject" id="subject" required>
         <label><i class="far fa-folder-open"></i> Bifoga filer

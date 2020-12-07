@@ -479,11 +479,19 @@ section h1{
     box-shadow: 2px 2px 5px black;
     width: 100%;
     margin: 0;
+    max-width: 40rem;
 }
 
-.third-section p{
-    margin: 2rem 0 0 0;
+.third-section h3{
+    margin-top: 1rem;
+}
+
+.third-section a{
+    color: black;
+    text-decoration: underline;
     padding: 0;
+    margin: 0;
+    font-weight: 600;
 }
 
 
@@ -494,6 +502,7 @@ section h1{
 
 .contact-image{
     width: 40%;
+    
 }
 
 .kontakt-button{
@@ -625,6 +634,13 @@ footer {
         width: 100%;
     }
  
+    .contact-image{
+        padding-top: 1rem;
+    }
+
+    .contact-image p{
+        text-align: center;
+    }
 
     footer{
         display: block;

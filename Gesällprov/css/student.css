@@ -199,6 +199,7 @@ img{
 }
 
 .skyddsombud-image img{
+    box-shadow: 2px 2px 5px grey;
     width: 100%;
     max-width: 25rem;
 }
@@ -333,7 +334,7 @@ footer {
         
     }
     .handledning-image img{
-        max-width: 60%;
+        max-width: 100%;
     }
     .studiebevakning-image{
         width: 100%;
@@ -341,7 +342,7 @@ footer {
     }
 
     .studiebevakning-image img{
-        max-width: 60%;
+        max-width: 100%;
         
     }
 
@@ -351,21 +352,21 @@ footer {
         text-align: center;
     }
     .skyddsombud-image img{
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .handledning-text{
-        width: 60%;
+        width: 100%;
         margin-top: 2rem;
     }
 
     .studiebevakning-text{
-        width: 60%;
+        width: 100%;
         margin-bottom: 2rem;
     }
 
     .skyddsombud-text{
-        width: 60%;
+        width: 100%;
         margin-top: 2rem;
     }
 

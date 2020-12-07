@@ -102,7 +102,14 @@ a.icon{
     display: none;
 }
 
-#aboutus{
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+.aboutus{
     text-align: center;
     background-color: white;
     width: 100%;
@@ -117,8 +124,12 @@ a.icon{
 }
 
 .aboutus-image img{
+    box-shadow: 2px 2px 5px black;
+}
+
+.aboutus-image img{
     width: 100%;
-    max-width: 25rem;
+    max-width: 35rem;
 }
 
 
@@ -139,7 +150,7 @@ a.icon{
     margin: 0;
 }
 
-#studentlivet{
+.studentlivet{
     text-align: center;
     background-color: white;
     width: 100%;
@@ -156,6 +167,8 @@ a.icon{
 .studentlivet-image img{
     width: 100%;
     max-width: 25rem;
+    box-shadow: 2px 2px 5px black;
+
 }
 
 
@@ -187,29 +200,29 @@ a.icon{
 }
 
 
-#article-three{
+.sektioner{
     display: block;
     width: 100%;
     background-color: rgb(249, 195, 0);
 }
 
-#article-three p{
+.sektioner p{
     margin: 3rem 2rem;
 }
 
-#article-three ul{
+.sektioner ul{
     display: flex;
 }
 
-#article-three li{
+.sektioner li{
     width: 25%;
 }
 
-#article-three li figure{
+.sektioner li figure{
     margin-top: 2rem;
 }
 
-#article-three li img{
+.sektioner li img{
     width: 100%;
     margin-top: 0;
     padding: 0rem 2rem 2rem 2rem;
@@ -219,7 +232,6 @@ a.icon{
 
 
 #article-button{
-    margin: 3rem 0rem;
     height: 10rem;
     text-align: center;
     background-color: black;
@@ -301,6 +313,25 @@ footer {
 
 /* Över 1220 px */
 @media screen and (min-width: 1220px){
+
+
+
+
+    .aboutus-text{
+        width: 70%;
+    }
+
+    .aboutus-image{
+        width: 25%;
+    }
+
+    .studentlivet-text{
+        width: 70%;
+    }
+
+    .studentlivet-image{
+        width: 25%;
+    }
     
     #article-one{
         margin-left: 4rem;
@@ -319,9 +350,7 @@ footer {
         column-count: 2;
         overflow: hidden;
     }
-    #article-button{
-        margin-top: 5rem;
-    }
+
 
     #article-two img{
         width:25%;
@@ -377,22 +406,22 @@ footer {
         margin-bottom: 2rem;
     }
 
-    #article-three{
+    .sektioner{
         text-align: center;
     }
 
-    #article-three ul{
+    .sektioner ul{
         display: block;
         
     }
 
-    #article-three li{
+    .sektioner li{
         width: 70%;
         margin: auto;
         text-align: center;
         display: inline-block;
     }
-    #article-three li figure{
+    .sektioner li figure{
     
         margin: 1rem auto;
         width: 50%;
@@ -437,6 +466,54 @@ footer {
 }
 
 @media screen and (max-width: 750px){
+    .aboutus{
+        display: block;
+        
+    }
+
+    .aboutus-text{
+        width: 100%;
+        margin: auto;
+        text-align: start;
+    }
+
+    .aboutus-image{
+        width: 100%;
+    }
+
+    .aboutus-text h2{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .studentlivet{
+        display: block;
+        
+    }
+
+    .studentlivet-text{
+        width: 100%;
+        margin: auto;
+        text-align: start;
+        padding-bottom: 1rem;
+    }
+
+    .studentlivet-text h2{
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .studentlivet-image{
+        max-height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .studentlivet-image img{
+        max-width: 100%;
+    }
+
     nav ul{
         display: block;
     }

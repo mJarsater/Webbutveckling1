@@ -1,9 +1,9 @@
 window.onload = function () {
-
+    document.getElementById("contact-form").addEventListener("submit", submitFunction, false);
+    document.getElementById("close-link").addEventListener("click", closeWindow);
     var attachBtn = document.getElementById("fileInput");
 
     attachBtn.onchange = function () {
-        console.log("hej");
         var input = document.getElementById('fileInput');
         var output = document.getElementById('selectedFiles');
         var children = "";
@@ -12,12 +12,21 @@ window.onload = function () {
             children += '<p>' + input.files.item(i).name + '<i class="far fa-file-code" ></i>' + '  ' + '</p>';
         }
         output.innerHTML = children;
-        var icon = document.getElementsByClassName("far fa-file-code");
-
-        icon.onclick = function () {
-            console.log("test")
-        }
     }
 
 }
 
+
+function submitFunction(evt) {
+    evt.preventDefault();
+    var name = document.getElementById("name").value;
+    document.getElementById("sent-name").append(name);
+    document.getElementById("thank-you-section").style.display = "block";
+    document.getElementById("contact-form").style.display = "none";
+    document.getElementById("title-section").style.display = "none";
+}
+
+function closeWindow() {
+    console.log("HEJ");
+    close();
+}

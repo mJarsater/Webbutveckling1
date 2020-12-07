@@ -1,13 +1,13 @@
 function logResults(json) {
     console.log(json.data);
 
-    document.getElementById("username").append(" " + json.data.login + "@GitHub");
-    document.getElementById("avatar").src = json.data.avatar_url;
+    document.getElementById("username").append(" " + json.data.owner.login + "@GitHub");
+    document.getElementById("avatar").src = json.data.owner.avatar_url;
     document.getElementById("updated_at").append(" " + json.data.updated_at);
 }
 
 $.ajax({
-    url: `https://api.github.com/users/mjarsater`,
+    url: `https://api.github.com/repos/mJarsater/Webbutveckling1`,
     dataType: "jsonp",
     jsonpCallback: "logResults"
 });

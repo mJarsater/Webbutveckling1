@@ -2,6 +2,8 @@ window.onload = function () {
 
     var attachBtn = document.getElementById("fileInput");
 
+    var contactWebmaster = document.getElementById("contact-webmaster");
+
     attachBtn.onchange = function () {
         console.log("hej");
         var input = document.getElementById('fileInput');
@@ -12,6 +14,11 @@ window.onload = function () {
             children += '<p>' + input.files.item(i).name + '<i class="far fa-file-code"></i>' + '  ' + '</p>';
         }
         output.innerHTML = children;
+    }
+
+
+    contactWebmaster.onclick = function () {
+        myWindow = window.open("/Gesällprov/html/webmaster.html", "_blank", "width=500, height=500");
     }
 
 }
@@ -42,5 +49,4 @@ function showSlide(n) {
     }
     slides[index - 1].style.display = "block";
 }
-
 

@@ -2,7 +2,6 @@ window.onload = function () {
     var memberBtn = document.getElementById("memberBtn");
     var menuBtn = document.getElementById("responsive-icon");
     var contactBtn = document.getElementById("contactBtn");
-    var contactWebmaster = document.getElementById("contact-webmaster");
     var accordion = document.getElementsByClassName("accordion");
     var arrowIcon = document.getElementsByClassName("fas");
     var prevBtn = document.getElementById("prevBtn");
@@ -27,12 +26,10 @@ window.onload = function () {
     }
 
     contactBtn.onclick = function () {
-        myWindow = window.open("/Gesällprov/html/contact.html", "_blank", "width=500, height=500");
+        myWindow = window.open("/Gesällprov/html/contact.html", "_blank", "width=600, height=1000");
     }
 
-    contactWebmaster.onclick = function () {
-        myWindow = window.open("/Gesällprov/html/webmaster.html", "_blank", "width=500, height=500");
-    }
+
 
     nextBtn.onclick = function () {
         navigate(1);
