@@ -1,4 +1,27 @@
 
+window.fbAsyncInit = function () {
+    document.getElementById("share-btn").addEventListener("click", shareFunction);
+    FB.init({
+        appId: '197952978615021',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v9.0'
+    });
+};
+
+window.onload = function () {
+
+
+    document.getElementById("memberBtn").addEventListener("click", openMemebership);
+    document.getElementById("share-btn").addEventListener("click", shareFunction);
+}
+
+
+// Funktion som öppnar en ny sida med länken
+function openMemebership() {
+    myWindow = window.open("https://medlem.disk.su.se/");
+}
+
 // Variabler för kartan
 var map, infoWindow, id;
 
@@ -23,4 +46,12 @@ function initMap() {
     infoWindow.open(map);
     // Centrerar kartan över rätt position
     map.setCenter(pos);
+}
+
+
+function shareFunction() {
+    FB.ui({
+        method: 'share',
+        href: 'https://www.facebook.com/diskstudentkar',
+    }, function (response) { });
 }

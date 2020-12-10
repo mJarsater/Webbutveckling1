@@ -76,6 +76,10 @@ a.icon{
     display: none;
 }
 
+.selected > i{
+    color: yellow;
+}
+
 
  h1{
     font-size: 2rem;
@@ -91,19 +95,25 @@ a.icon{
 #form-image{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     padding: 2rem;
     background-color: white;
 }
 
 .cafe-form{
     text-align: start;
-    width: 40%;
+    width: 60%;
+    margin: auto;
     padding: 0;
 }
 
 .cafe-form p{
     margin-bottom: 1rem;
+}
+
+#thank-you-section{
+    padding-bottom: 2rem;
+    text-align: center;
+    display: none;
 }
 
 .cafe-form form{
@@ -135,7 +145,8 @@ input:hover{
 
 .cafe-image {
     text-align: center;
-    width: 50%;
+    margin: auto auto;
+    width: 35%;
 }
 
 .cafe-image img{
@@ -211,10 +222,12 @@ footer {
     display: flex;
     width: 100%;
     background-size: 100%;
-
     justify-content: space-evenly;
   }
 
+  footer h3{
+      padding-bottom: 0;
+  }
 
   footer ul{
       text-align: center;
@@ -231,10 +244,16 @@ footer {
       padding: 0;
   }
 
-  #bottom{
-    bottom: 0;
-    text-align: center;
-    margin-bottom: 0.5rem;
+
+@media screen and (min-width: 1500px){
+    #form-image{
+        padding: 2rem 10rem;
+    }
+
+    #menu-section{
+        padding: 2rem 10rem;
+    }
+
 }
 
 
@@ -245,6 +264,13 @@ footer {
 }
 
 @media screen and (max-width: 1200px){
+  
+
+}
+
+
+@media screen and (max-width: 1000px){
+
     #form-image{
         display: block;
     }
@@ -263,12 +289,6 @@ footer {
         margin: auto;
         width: 100%;
     }
-
-}
-
-
-@media screen and (max-width: 1000px){
-
     table th{
         font-size: 1.3rem;
     }

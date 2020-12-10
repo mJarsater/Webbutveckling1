@@ -162,6 +162,7 @@ h1{
     margin: 0;
 }
 
+
 .google-maps{
     background-color: black;
     padding: 2rem;
@@ -204,13 +205,14 @@ h1{
 
 
 
-#article-button{
-    height: 10rem;
+.facebook-section{
+    padding: 1rem;
     text-align: center;
     background-color: black;
-}
+    color: white;
+}   
 
-#article-button button{
+.facebook-section button{
     font-size: 17px;
     font-weight: 700;
     background-color: white;
@@ -223,7 +225,37 @@ h1{
     margin-bottom: 3rem;
 }
 
-#article-button button:hover{
+.facebook-section button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+#share-btn i{
+    color: rgba(66, 103, 178, 255)
+}
+
+.membership-section{
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.membership-section button{
+    font-size: 17px;
+    font-weight: 700;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 2px;
+    padding: 1rem;
+    width: 250px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.membership-section button:hover{
     transform: scale(1.1);
     cursor: pointer;
 
@@ -270,7 +302,16 @@ footer {
 
 
 
+@media screen and (min-width: 1500px){
+    .aboutus{
+        padding: 2rem 10rem;
+    }
 
+    .studentlivet{
+        padding: 2rem 10rem;
+    }
+
+}
 
 @media screen and (min-width: 1300px){
     a{
@@ -432,7 +473,7 @@ footer {
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 850px){
     .aboutus{
         display: block;
         
@@ -446,12 +487,17 @@ footer {
 
     .aboutus-image{
         width: 100%;
+        text-align: center;
     }
 
     .aboutus-text h2{
         text-align: center;
         padding: 1rem;
     }
+
+}
+
+@media screen and (max-width: 750px){
 
     .studentlivet{
         display: block;

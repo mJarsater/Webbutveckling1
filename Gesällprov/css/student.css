@@ -191,7 +191,7 @@ img{
     width: 100%;
     padding: 2rem;
     display: flex;
-    color: white;
+    color: rgba(224, 176, 0);;
 }
 
 .skyddsombud-image{
@@ -257,6 +257,20 @@ footer {
   footer a:hover{
       padding: 0;
   }
+
+
+  @media screen and (min-width: 1500px){
+    #handledning{
+        padding: 2rem 10rem;
+    }
+
+    #skyddsombud{
+        padding: 2rem 10rem;
+    }
+    #studiebevakning{
+        padding: 2rem 10rem;
+    }
+}
 
 
 @media screen and (min-width: 1300px){

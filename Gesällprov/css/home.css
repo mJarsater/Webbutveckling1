@@ -374,15 +374,13 @@ section h1{
 
 #upcomming_events p{
     text-align: start;
+    padding-bottom: 1rem;
 }
 
 #upcomming_events{
     width: 30%;
 }
 
-.second-section section{
-    height: 15rem;
-}
 
 .second-section p{
     text-align: center;
@@ -566,6 +564,21 @@ footer {
 
 
 
+@media screen and (min-width: 1500px){
+    .first-section{
+        padding: 2rem 10rem;
+    }
+
+    .second-section{
+        padding: 2rem 10rem;
+    }
+    .third-section{
+        padding: 2rem 10rem;
+    }
+}
+
+
+
 @media screen and (max-width: 1500px){
     header{
         height: 60vh;
@@ -579,6 +592,24 @@ footer {
 }
 
 @media screen and (max-width: 1220px){
+
+    .third-section {
+        
+    }
+
+    .contact-section{
+        width: 50%;
+    }
+
+    .contact-section{
+        padding-bottom: 1rem;
+    }
+
+    .contact-image{
+        margin: auto 0;
+        width: 50%;
+        text-align: center;
+    }
 
     .article-card{
         grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
@@ -622,17 +653,24 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px){
-    .article-card{
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    }
-
+@media screen and (max-width: 900px){
     .third-section {
         display: block;
     }
 
-    .third-section section{
+    .contact-image{
+        text-align: center;
         width: 100%;
+    }
+
+    .contact-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .article-card{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
  
     .contact-image{

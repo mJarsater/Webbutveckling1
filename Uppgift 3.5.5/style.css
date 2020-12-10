@@ -1,5 +1,11 @@
-
-header{
+*{
     text-align: center;
 }
 
+#loginBtn{
+    display: none;
+}
+
+.login{
+    display: inline;
+}
