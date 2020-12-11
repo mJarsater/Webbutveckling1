@@ -1,14 +1,8 @@
 CACHE MANIFEST 
-  
-# version 0.1 
-  
 
-CACHE:
 another.html
 other.html
 index.html 
 style.css
 index.js
-
-NETWORK:
 images/coco.jpg
