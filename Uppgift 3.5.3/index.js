@@ -1,6 +1,8 @@
-CACHE MANIFEST 
-  
-# version 0.1
-
-index.html
-style.css 
+if ('serviceWorker' in navigator) {
+    console.log("Service worker in progress");
+    navigator.serviceWorker.register('service-worker.js').then(function () {
+        console.log("Service worker registered");
+    }, function () {
+        console.log("Service worker failed");
+    });
+} 
