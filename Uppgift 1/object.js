@@ -10,5 +10,3 @@ var person = {
 };
 
 document.getElementById("authorName").innerHTML = person.fullname();
-
-document.write("Hello World!")
