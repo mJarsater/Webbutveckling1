@@ -9,7 +9,7 @@
 
 
 header{
-    background-image: url(/Gesällprov/images/landing_pen.jpg);
+    background-image: url(../images/landing_pen.jpg);
     background-size: 100%;
     color: white;
     height: 100vh;
@@ -141,7 +141,7 @@ section h1{
 
 .bg-bacteria::before{
     content:"";
-    background: url(/Gesällprov/images/bacteria.jpg);
+    background: url(../images/bacteria.jpg);
     background-size: 100%;
     opacity: 0.2;
     z-index: -3;
@@ -166,7 +166,7 @@ section h1{
 
 .bg-protocol::before{
     content:"";
-    background: url(/Gesällprov/images/DISK_protokoll.jpg);
+    background: url(../images/DISK_protokoll.jpg);
     background-size: 100%;
     opacity: 0.2;
     z-index: -3;
@@ -183,7 +183,7 @@ section h1{
 
 .bg-cafe::before{
     content:"";
-    background: url(/Gesällprov/images/cafeet.jpg);
+    background: url(../images/cafeet.jpg);
     background-size: 100%;
     opacity: 0.2;
     z-index: -3;
@@ -409,12 +409,12 @@ section h1{
 }
 
 #innofactor_event{
-    background-image: url(/Gesällprov/images/innofactor.png);
+    background-image: url(../images/innofactor.png);
     background: no-repeat;
 }
 
 #academic_event{
-    background-image: url(/Gesällprov/images/innofactor.png);
+    background-image: url(../images/innofactor.png);
     background: no-repeat;
 }
 
@@ -593,10 +593,6 @@ footer {
 
 @media screen and (max-width: 1220px){
 
-    .third-section {
-        
-    }
-
     .contact-section{
         width: 50%;
     }
@@ -645,7 +641,8 @@ footer {
     }
 
     header {
-        height: 30vh;
+        height: 50vh;
+        min-height: 50vh;
     }
 
     header h3 {
