@@ -13,7 +13,7 @@ header{
     background-size: 100%;
     color: white;
     height: 100vh;
-    min-height: 30vh;
+    min-height: 20vh;
     text-align: center;
 }
 
@@ -711,6 +711,11 @@ footer {
         right: 1rem;
         top: 1rem;
       }
+
+      header {
+        height: 30vh;
+        min-height: 20vh;
+    }
 }
  @media screen and (max-width: 750px) {
         .topnav.responsive {position: relative;}

@@ -9,7 +9,15 @@
     color: black;
 }
 
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
 
+a:hover{
+    color: white;
+}
 
 header{
     height: 10rem;
@@ -63,9 +71,9 @@ img{
     background-color: transparent;
     border: 2px solid black;
     text-decoration: none;
-    padding: 0.5rem;
     transition: all 0.2s ease;
     width: 150px;
+    height: 50px;
 }
 
 #bottomsection button:hover{
